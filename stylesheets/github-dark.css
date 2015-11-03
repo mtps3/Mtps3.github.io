@@ -114,3 +114,14 @@
   color: #264ec5;
 }
 
+p.dark {
+  color: #666;
+}
+
+p.small {
+  font-size: 13px;
+}
+
+p.dark a {
+  color: #666;
+}
