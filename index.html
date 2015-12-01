@@ -2,19 +2,19 @@
 layout: default
 ---
 
-<div class="home">
+<h3>
+<a id="welcome-to-losfuzzys-new-webpage" class="anchor" href="#welcome-to-losfuzzys-new-webpage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to LosFuzzys' webpage</h3>
 
-  <h1>Posts</h1>
+<p><em>LosFuzzys</em> ist a CTF team located in Graz, Europe.</p>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+<p>We are a group of people interested in information security, which <a href="https://ctftime.org/team/8323">occasionally</a> participates in CTFs.</p>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<p class="small dark">You are located in Graz? You are interested in competitive information security competitions? You want to participate? Feel free to reach out to us!</p>
 
-</div>
+<ul>
+<li>IRC: #LosFuzzys @ oftc.net</li>
+<li>Mailinglist: <a href="https://mail.htu.tugraz.at/cgi-bin/mailman/listinfo/losfuzzys">losfuzzys@htu.tugraz.at</a>
+</li>
+</ul>
+
+<p class="small dark">LosFuzzys is currently coordinated by <a href="https://twitter.com/f0rki">f0rki</a> and <a href="https://twitter.com/stefan2904">stefan</a>.</p>
