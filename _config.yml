@@ -1,0 +1,12 @@
+# Site settings
+title: LosFuzzys
+email: crypto+losfuzzyswebsite@2904.cc
+description: "LosFuzzys ist a CTF team located in Graz, Europe."
+baseurl: ""
+url: "https://losfuzzys.github.io"
+twitter_username: losfuzzys
+github_username:  losfuzzys
+
+# Build settings
+markdown: kramdown
+permalink: pretty
