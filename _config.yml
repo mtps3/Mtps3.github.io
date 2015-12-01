@@ -15,5 +15,5 @@ permalink: pretty
 # (see https://help.github.com/categories/github-pages-features/)
 gems:
   - jekyll-sitemap
-  - jekyll-mentions
   - jekyll-redirect-from
+#  - jekyll-mentions
