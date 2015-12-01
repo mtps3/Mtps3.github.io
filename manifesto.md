@@ -2,6 +2,7 @@
 layout: page
 title: Manifesto
 permalink: /manifesto/
+redirect_from: "/manifesto.html"
 ---
 
 *LosFuzzys* is a group of people interested in information security, which occasionally participates in CTFs. ([What is CTF?](https://ctftime.org/ctf-wtf/))
