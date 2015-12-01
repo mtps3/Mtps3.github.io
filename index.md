@@ -6,6 +6,8 @@ permalink: /
 
 ## Welcome to LosFuzzys' webpage
 
+<img src="/images/fuzzy.jpg" style="width:7em; height:7em; float:right;" />
+
 *LosFuzzys* ist a CTF team located in Graz, Europe.
 
 We are a group of people interested in information security, which [occasionally](https://ctftime.org/team/8323) participates in CTFs.
