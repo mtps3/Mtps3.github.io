@@ -4,7 +4,6 @@
 
         <section id="navigation">
           <a href="/">Home</a>
-          <a href="/writeups">Writeups</a>
         {% for page in site.pages %}
           {% if page.title %}<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
         {% endfor %}
