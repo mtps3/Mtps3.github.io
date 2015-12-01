@@ -10,3 +10,10 @@ github_username:  losfuzzys
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# github gems
+# (see https://help.github.com/categories/github-pages-features/)
+gems:
+  - jekyll-sitemap
+  - jekyll-mentions
+  - jekyll-redirect-from
