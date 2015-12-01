@@ -3,7 +3,6 @@
         <h2>don&#39;t feed the bugs!</h2>
 
         <section id="navigation">
-          <a href="/">Home</a>
         {% for page in site.pages %}
           {% if page.title %}<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
         {% endfor %}
