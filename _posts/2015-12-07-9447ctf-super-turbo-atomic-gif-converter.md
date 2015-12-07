@@ -36,9 +36,11 @@ and ffmpeg will happily convert it for you. ffmpeg probes the files for certain 
 values to detect the filetype.
 
 The first thing I noticed was that they use a custom compiled version of ffmpeg:
+
 ```
 FFMPEG = "ffmpeg-2.8.2-64bit-static/ffmpeg"
 ```
+
 Why did they compile it themselves? Do we need to do RCE? So I searched for a known
 vulnerabilities. According to the [ffmpeg security page](https://ffmpeg.org/security.html)
 version 2.8.2 is vulnerable to three different CVEs. I couldn't find any details on
@@ -55,10 +57,12 @@ at all the [supported input files of ffmpeg](https://ffmpeg.org/ffmpeg-formats.h
 
 So I noticed the `concat` demuxer at first. It takes a textfile as input. This file contains
 script like instructions for concatenating multiple files: e.g.
+
 ```
 ffconcat version 1.0
 file '/home/ctf/flag.txt'
 ```
+
 Unfortunately the concat demuxer doesn't allow 'unsafe' files in the input file. Files are
 considered unsafe if they contain a `/` at the start or if they contain anything other than
 `[A-Za-z0-9-_]`. I started trying different inputs, putting `NULL` bytes in the path, etc.
@@ -72,7 +76,8 @@ HTTP Live Streaming playlists. I searched for an example of this file format and
 pasted [this example from apple](https://developer.apple.com/library/ios/technotes/tn2288/_index.html).
 Maybe ffmpeg can also open `file://` URLs. So I just gave it a try, with the following content
 for my `wat.gif`:
-```
+
+{% highlight %}
 #EXTM3U
 #EXT-X-PLAYLIST-TYPE:VOD
 #EXT-X-TARGETDURATION:1
@@ -81,10 +86,10 @@ for my `wat.gif`:
 #EXTINF:10.0,
 file:///home/ctf/flag.txt
 #EXT-X-ENDLIST
-```
+{% endhighlight %}
 
 I uploaded it and got the following result:
-![screnenshot: got the flag](posts/2015-12-07-9447ctf-super-turbo-atomic-gif-converter_flag.png  "converted flag")
+![screnenshot: got the flag](images/posts/2015-12-07-9447ctf-super-turbo-atomic-gif-converter_flag.png  "converted flag")
 yay got it! Although given the flag I wonder if this really is the intended solution.
 
 
