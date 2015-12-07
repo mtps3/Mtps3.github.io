@@ -77,7 +77,7 @@ pasted [this example from apple](https://developer.apple.com/library/ios/technot
 Maybe ffmpeg can also open `file://` URLs. So I just gave it a try, with the following content
 for my `wat.gif`:
 
-{% highlight %}
+```
 #EXTM3U
 #EXT-X-PLAYLIST-TYPE:VOD
 #EXT-X-TARGETDURATION:1
@@ -86,7 +86,7 @@ for my `wat.gif`:
 #EXTINF:10.0,
 file:///home/ctf/flag.txt
 #EXT-X-ENDLIST
-{% endhighlight %}
+```
 
 I uploaded it and got the following result:
 ![screnenshot: got the flag](images/posts/2015-12-07-9447ctf-super-turbo-atomic-gif-converter_flag.png  "converted flag")

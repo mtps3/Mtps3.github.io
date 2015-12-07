@@ -11,6 +11,9 @@ github_username:  losfuzzys
 markdown: kramdown
 permalink: pretty
 
+kramdown:
+    input: GFM
+
 # github gems
 # (see https://help.github.com/categories/github-pages-features/)
 gems:
