@@ -6,7 +6,7 @@ permalink: /meetings/
 
 <ul>
 {% for post in site.categories.meeting %}
-<li>{{ post.when }} <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> @ {{ post.when }} </li>
 {% endfor %}
 </ul>
 

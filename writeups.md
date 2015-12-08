@@ -6,7 +6,7 @@ permalink: /writeups/
 
 <ul>
 {% for post in site.categories.writeup %}
-<li>{{ post.date | date: "%b %-d, %Y" }} <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+<li><!--{{ post.date | date: "%b %-d, %Y" }} --> <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
 
