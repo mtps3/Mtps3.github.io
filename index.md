@@ -10,7 +10,7 @@ permalink: /
 
 *LosFuzzys* ist a CTF¹ team located in Graz, Europe.
 
-We are a group of people interested in information security, which [occasionally](https://ctftime.org/team/8323) participates in CTFs.
+We are a group of people interested in information security, which [occasionally](https://ctftime.org/team/8323) participates in [CTFs](https://ctftime.org/ctf-wtf/).
 
 <p class="small dark">You are located in Graz? You are interested in competitive information security competitions? You want to participate? Feel free to reach out to us!</p>
 
@@ -22,5 +22,5 @@ We are a group of people interested in information security, which [occasionally
 
 
 <p class="small dark">
-¹ <strike>Cyber Task Force</strike> Capture The Flag
+¹ - <strike>Cyber Task Force</strike> Capture The Flag
 </p>
