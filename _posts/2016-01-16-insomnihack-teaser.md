@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "First 2016 training"
+title:  "Insomni'hack teaser"
 when: "Jan 16-17, 2016"
 author: verr
 categories: meeting
