@@ -14,10 +14,9 @@ We are a group of people interested in information security, which [occasionally
 
 <p class="small dark">You are located in Graz? You are interested in competitive information security competitions? You want to participate? Feel free to reach out to us!</p>
 
-* IRC: `#LosFuzzys @ oftc.net`
+* Mail: we@hack.more.systems
 * Twitter: [@LosFuzzys](https://twitter.com/LosFuzzys)
-* Mailinglist: [losfuzzys@htu.tugraz.at](mailto:losfuzzys@htu.tugraz.at)
-    [(register)](https://mail.htu.tugraz.at/cgi-bin/mailman/listinfo/losfuzzys)
+* Mailinglist: [losfuzzys@htu.tugraz.at](mailto:losfuzzys@htu.tugraz.at) [(register)](https://mail.htu.tugraz.at/cgi-bin/mailman/listinfo/losfuzzys)
 
 <p class="small dark">LosFuzzys is currently coordinated by <a href="https://twitter.com/f0rki">f0rki</a> and <a href="https://twitter.com/stefan2904">stefan</a>.</p>
 
