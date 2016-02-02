@@ -86,6 +86,10 @@ the login code.
         -H 'Cookie: PHPSESSID=a7l9q5dihoumkg02cjkagh8gj1'
         --data 'code=742aa277b035c96ef64cba0364c75e214596'
 
+Also note that this will always work as soon as you have it, since sessions are
+never destroyed and also the login code is never regenerated. At least they
+force a new session upon login.
+
 At first this returned nothing, so it seemed the flag file was empty or they
 didn't configure sudo. Anyway after complaining on IRC and waiting a little,
 the flag reading worked and it turned out to be:
