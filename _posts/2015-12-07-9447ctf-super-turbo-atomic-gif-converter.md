@@ -89,7 +89,7 @@ file:///home/ctf/flag.txt
 ```
 
 I uploaded it and got the following result:
-![](../images/posts/2015-12-07-9447ctf-super-turbo-atomic-gif-converter_flag.png)
+![](/images/posts/2015-12-07-9447ctf-super-turbo-atomic-gif-converter_flag.png)
 yay got it! Although given the flag I wonder if this really is the intended solution.
 
 
