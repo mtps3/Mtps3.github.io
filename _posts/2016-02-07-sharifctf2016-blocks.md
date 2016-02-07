@@ -143,7 +143,7 @@ mirror it one time and then we could just read the flag:
 
 This is the script we used for building the PNG file:
 
-```
+```python
 #!/usr/bin/env python
 
 from __future__ import print_function
