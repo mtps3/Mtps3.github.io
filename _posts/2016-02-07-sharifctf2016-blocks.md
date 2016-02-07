@@ -123,7 +123,7 @@ with `feh`. There We could make out the beginning of something that looked like
 text, probably the flag. `gimp` was also able to decode and display parts of
 the PNG. The view in gimp looked like this:
 
-![](../images/posts/2016-02-07-sharifctf2016-blocks_1.png "")
+![](/images/posts/2016-02-07-sharifctf2016-blocks_1.png)
 
 OK So now we only need to find the next `IDAT` chunk that gives us some result
 that looks reasonable. So our workflow was:
@@ -138,7 +138,7 @@ Because we were two people doing this in parallel, we were quite fast at this.
 At the end we got the PNG, which contained the flag as text. We just had to
 mirror it one time and then we could just read the flag:
 
-![](../images/posts/2016-02-07-sharifctf2016-blocks_2.png "")
+![](/images/posts/2016-02-07-sharifctf2016-blocks_2.png)
 
 
 This is the script we used for building the PNG file:
