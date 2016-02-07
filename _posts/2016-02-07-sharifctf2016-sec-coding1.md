@@ -63,7 +63,7 @@ int main()
 }
 ```
 
-After submitting the fixed program, we get the flag.
+After submitting the fixed program, we got the flag.
 
 Easy and obvious... at least if you know anything about C/C++. This seems more
 like a 10 point warm up challenge than 100 points... well.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Sharif University CTF 2016: sec-coding1 (misc 100)"
+title:  "Sharif University CTF 2016: sec-coding2 (misc 300)"
 author: f0rki
 categories: writeup
 ---
