@@ -18,6 +18,9 @@ All our meetings are open to everyone, so if you are not part of LosFuzzys, feel
 <!-- generated using scripts/getPastCTFs.py  -->
 
 * 2016
+  * Sharif University CTF <span class="discreet">(place 15 of 447)</span>
+  * HackIM  <span class="discreet">(place 61 of 535)</span>
+  * EFF CTF
   * Insomni'hack teaser <span class="discreet">(place 44 of 245)</span>
 * 2015
   * 32C3 CTF <span class="discreet">(place 58 of 389)</span>
