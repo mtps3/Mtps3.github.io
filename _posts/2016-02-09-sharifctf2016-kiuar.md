@@ -86,9 +86,10 @@ generate the PNG QR code:
 qrencode -s 1 -v 1 -m 1 -o test.png "<payload>" && optipng test.png
 ```
 
-If the length of the payload was not too long (I think about 10 bytes), this
-would suffice.  It also took us quite a while to find out that the server would
-only recognize the QR code if it had a margin of at least 1 pixels.
+If the length of the payload was not too long (20 bytes or so, depending on the
+characters), this would suffice.  It also took us quite a while to find out
+that the server would only recognize the QR code if it had a margin of at least
+1 pixels.
 
 When finally succeeded, we found out that we could send shell commands inside the QR code.
 There was a file called flag in the server's working directory, which we needed to read:
