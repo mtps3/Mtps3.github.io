@@ -9,14 +9,16 @@ categories: writeup
 * **Points:** 200
 * **Description:**
 
-> telnet ctf.sharif.edu 12432
-> Trying 213.233.175.130...
-> Connected to ctf.sharif.edu.
-> Escape character is '^]'.
-> Welcome to Sharif blackbox challenge :)
-> Proof of work: Are you ready?
-> Give me a 32-bit hex integer, whose leftmost 22 bits of its MD5 is 1000001010110000011101.
-> You have 60 seconds to reply.
+```
+telnet ctf.sharif.edu 12432
+Trying 213.233.175.130...
+Connected to ctf.sharif.edu.
+Escape character is '^]'.
+Welcome to Sharif blackbox challenge :)
+Proof of work: Are you ready?
+Give me a 32-bit hex integer, whose leftmost 22 bits of its MD5 is 1000001010110000011101.
+You have 60 seconds to reply.
+```
 
 ## Write-up
 
@@ -27,7 +29,7 @@ changed every time a new connection is established, but the length was fixed.
 The server would also reject any input with less than 5 characters.
 
 This seemed quite easy at first, but the server would not accept my computed
-values. Thankfully, my colleage did interpret the task differently; he found
+values. Thankfully, my colleague did interpret the task differently; he found
 out that we needed to compute the MD5 of the *hex string representation* of the
 32-bit integer, so something like this:
 
@@ -144,9 +146,6 @@ for command in commands:
     m = hashlib.md5()
 
     target_bits = challenge.split(" ")[-1][:-2]
-    #target_bits = target_bits.ljust(32, '0')
-    #target_mask = int(target_bits, 2)
-    #print("mask {}".format(bin(target_mask)))
 
     conn.clean_and_log()
 
