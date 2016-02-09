@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Sharif University CTF 2016: Kiuar"
+title:  "Sharif University CTF 2016: kiuar (pwn 200)"
 author: skogler
 categories: writeup
 ---
