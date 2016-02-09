@@ -28,6 +28,9 @@ leftmost 22 bit of the MD5 would match the given value. The bits to match
 changed every time a new connection is established, but the length was fixed.
 The server would also reject any input with less than 5 characters.
 
+Our approach was to just loop over all integers and calculate MD5 hashes until
+one matches the given bits.
+
 This seemed quite easy at first, but the server would not accept my computed
 values. Thankfully, my colleague did interpret the task differently; he found
 out that we needed to compute the MD5 of the *hex string representation* of the
