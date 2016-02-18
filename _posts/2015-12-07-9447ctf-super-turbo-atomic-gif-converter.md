@@ -3,6 +3,7 @@ layout: post
 title: "9447ctf: Super Turbo Atomic Gif Converter"
 author: f0rki
 categories: writeup
+tags: [cat/web, tech/ffmpeg]
 ---
 
 * **Category:** Web

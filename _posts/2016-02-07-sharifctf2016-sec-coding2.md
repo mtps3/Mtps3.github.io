@@ -3,6 +3,7 @@ layout: post
 title:  "Sharif University CTF 2016: sec-coding2 (misc 300)"
 author: f0rki
 categories: writeup
+tags: [cat/misc, lang/cpp]
 ---
 
 * **Category:** misc

@@ -3,6 +3,7 @@ layout: post
 title:  "Sharif University CTF 2016: Login to system (pwn 100)"
 author: f0rki
 categories: writeup
+tags: [cat/pwn]
 ---
 
 * **Category:** pwn

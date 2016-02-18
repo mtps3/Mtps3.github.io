@@ -3,6 +3,7 @@ layout: post
 title:  "hackim 2016: smasththestate (web 400)"
 author: f0rki
 categories: writeup
+tags: [cat/web, lang/php]
 ---
 
 * **Category:** web

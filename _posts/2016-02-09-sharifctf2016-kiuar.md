@@ -3,6 +3,7 @@ layout: post
 title:  "Sharif University CTF 2016: kiuar (pwn 200)"
 author: skogler
 categories: writeup
+tags: [cat/pwn]
 ---
 
 * **Category:** pwn
@@ -95,7 +96,7 @@ When finally succeeded, we found out that we could send shell commands inside th
 There was a file called flag in the server's working directory, which we needed to read:
 
 ```
-Flag: The output of your command is large, I only send 18 bytes of it :P 
+Flag: The output of your command is large, I only send 18 bytes of it :P
     SharifCTF{b5ffb0e6
 ```
 
