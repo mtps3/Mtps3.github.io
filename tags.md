@@ -1,8 +1,6 @@
 ---
 layout: page
 title: Tags
-group: navigation
-section: tags
 hidden: true
 ---
 
