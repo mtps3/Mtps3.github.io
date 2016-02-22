@@ -31,7 +31,7 @@ function myhash($str) {
 
 ## Writeup
 
-The website shows a login form with a user and a password field. From the given hint in the README file we can assume that we need to find a value in the password field that gets us through the following check:
+The website shows a login form with a user and a password field. From the given hint in the README file we can assume that we need to find a value for the password field that gets us through the following check:
 
 ```php
 md5(md5($str) . "SALT")) == "0e408306536730731920197920342119"
