@@ -3,7 +3,7 @@ layout: post
 title:  "Internetwache CTF 2016: Replace with Grace (web 60)"
 author: sigttou
 categories: writeup
-tags: [cat/web]
+tags: [cat/web, lang/php]
 ---
 
 * **Category:** web
