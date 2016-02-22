@@ -42,14 +42,14 @@ Usualy such challenges consist of multiple levels, so we again automated the sol
 Except for the guessing of format (Unix-Timestamp), timezone (CET) and some parsing, the main bruteforcing looked like this:
 
 ```python
-        for offset in range(0, 62):
-            for CHAR in string.printable:
-                TIME = str(timestamp + offset)
-                text = TIME + ':' + CHAR
-                if digest == get_SHA(text):
-                    log.info('Solution: ' + text)
-                    r.sendline(text)
-                    flag += CHAR
+for offset in range(0, 62):
+    for CHAR in string.printable:
+        TIME = str(timestamp + offset)
+        text = TIME + ':' + CHAR
+        if digest == get_SHA(text):
+            log.info('Solution: ' + text)
+            r.sendline(text)
+            flag += CHAR
 ```
 
 After 31 rounds, we owned the flag:
