@@ -29,10 +29,8 @@ The problem was, that the website filtered some inputs like:
 
 It worked with:
 
-```php
-<?php
+```
 var_dump(show_source('flag.php'));
-?>
 ```
 
 A simple, but nice challenge.
