@@ -21,10 +21,11 @@ From other challenges we know, that we can execute php code using:
 ```
 
 The problem was, that the website filtered some inputs like:
-- file
-- open
+* file
+* open
 
 It worked with:
+
 ```php
 var_dump(show_source('flag.php'));
 ```
