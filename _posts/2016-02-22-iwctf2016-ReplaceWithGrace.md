@@ -19,6 +19,7 @@ From other challenges we know, that we can execute php code using:
 ```php
 /(.*)/e
 ```
+(Check out [this Stackoverflow answer](http://stackoverflow.com/a/16986549/1518225) for details.)
 
 The problem was, that the website filtered some inputs like:
 
