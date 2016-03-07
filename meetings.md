@@ -18,6 +18,7 @@ All our meetings are open to everyone, so if you are not part of LosFuzzys, feel
 <!-- generated using scripts/getPastCTFs.py  -->
 
 * 2016
+  * Boston Key Party CTF <span class="discreet">(place 183 of 764)</span>
   * Internetwache CTF <span class="discreet">(place 27 of 647)</span>
   * Sharif University CTF <span class="discreet">(place 15 of 447)</span>
   * HackIM  <span class="discreet">(place 61 of 535)</span>
