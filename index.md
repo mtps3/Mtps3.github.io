@@ -23,4 +23,6 @@ We are a group of people interested in information security, which [occasionally
 
 <p class="small dark">
 ¹ - <strike>Cyber Task Force</strike> Capture The Flag
+
+$$x = \frac{a}{b}$$
 </p>
