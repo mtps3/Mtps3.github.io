@@ -22,6 +22,7 @@ The proof is based on a three-colored graph, where the graph was given,
 but the colors not.
 
 graph.txt:
+
 ```
 # 683
 129 495
@@ -94,6 +95,7 @@ must be found.
 Thanks to @meisterluk, we found out, that a SAT solver is useful for
 graph three-coloring. There are two conditions, that have to be
 satisfied:
+
 * Every vertex has one of the three colors.
 * Not the same color on one edge.
 
