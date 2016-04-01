@@ -104,7 +104,7 @@ print "".join(hex(c)[2:].zfill(2) for c in cipher)
 
 ### Retrieve contents of the floppy disk badge
 
-The conference badge handed out to all conference participants was a floppy disk. And since one of the Jeopardy challenges mentioned a floppy, we knew what to do ... but of course, we traveled to Ljubljana without a floppy drive. 
+The conference badge handed out to all conference participants a floppy disk. And since one of the Jeopardy challenges mentioned a floppy, we knew what to do ... but of course, we traveled to Ljubljana without a floppy drive. 
 
 We then first tried to use the old Windows XP computer to get the contents of the floppy, but the build-in reader was not connected. But one of the organizers at the front-desk had a USB floppy drive, so we nicely asked to borrow it. That way we retrieved the `FLAG.txt` file from the floppy and a file called `faq-root`, which will become important later.
 
@@ -120,7 +120,7 @@ Maybe your starting point should be 192.168.66.6.
 
 ### The network setup
 
-A quick nmap revelied the following hosts in the network. For your convenience, we annotated the output with our later findings.
+A quick nmap revealed the following hosts in the network. For your convenience, we annotated the output with our later findings.
 
 ```
 Nmap scan report for 192.168.66.1
@@ -166,7 +166,7 @@ PORT     STATE SERVICE  VERSION
 53/tcp   open  domain   ISC BIND 1.0
 ```
 
-We were not able to find all the hostnames at the beginning (whuch was necessary for accessing services using vhosts), because the network used a custom DNS resolver. As soon as we found their DNS resolver (at `192.168.66.15`), we could get all the hostnames of the machines by using reverse lookups doing a DNS zone transfer.
+We were not able to find all the hostnames at the beginning (which was necessary for accessing services using vhosts), because the network used a custom DNS resolver. As soon as we found their DNS resolver (at `192.168.66.15`), we could get all the hostnames of the machines by using reverse lookups doing a DNS zone transfer.
 
 ```
 $ dig @192.168.66.15 fars.si AXFR
@@ -215,9 +215,9 @@ higher. This was good enough to be scanned:
 
 ![](/images/posts/2016-03-17-blctf-qr-post.png)
 
-### Decompiling the android app
+### Decompiling the Android app
 
-The welcome page also provided an Android App in form of an `app.apk`. We were able to decompile it using the *Jadx* decompiler for Android. After browsing the code and especially looking at the login routines we discovered a flag:
+The welcome page also provided an Android app in form of an `app.apk`. We were able to decompile it using the *Jadx* decompiler for Android. After browsing the code and especially looking at the login routines we discovered a flag:
 
 ```
 $ pss -i "this.flag"
@@ -229,17 +229,17 @@ $ echo "Q1RGIzE3OiBIb3cgbWFueSBmbGFncyBkaWQgeW91IG1pc3M/" | base64 -d
 CTF#17: How many flags did you miss?
 ```
 
-(So probably we missed at least on other flag here ...)
+(So probably we missed at least one other flag here ...)
 
 ### SNMP
 
 `HINT: SNMP`
 
-After the organizers provided a hint on the ocmpetition page to look at SNMP (Simple Network Management Protocol) we used [*snmpcheck*](https://libraries.io/github/mcantoni/snmpcheck) to query all hosts. (We later learned that there are Metasploit modules available which help you doing that.) One host was configured in a way that allowed us to read a lot of information via SNMP. After trying to pwn the misconfigured host using the extracted information, we reviewed the *snmpcheck* output and finally found a flag in one of the properties ...
+After the organizers provided a hint on the competition page to look at SNMP (Simple Network Management Protocol) we used [*snmpcheck*](https://libraries.io/github/mcantoni/snmpcheck) to query all hosts. (We later learned that there are Metasploit modules available which help you doing that.) One host was configured in a way that allowed us to read a lot of information via SNMP. After trying to pwn the misconfigured host using the extracted information, we reviewed the *snmpcheck* output and finally found a flag in one of the properties ...
 
-### root on FAQ system
+### Root on FAQ system
 
-The floppy used in an earlier task also contained a file called `faq-root`, which contained an ssh rivate key. Unfortunately the key was password protected. From the name of the file, it was pretty clear that this was the way to login at 192.168.66.7 (the phpMyFAQ system) as root. Sometime in the middle of the CTf the following hint was released:
+The floppy used in an earlier task also contained a file called `faq-root`, which contained an ssh private key. Unfortunately the key was password protected. From the name of the file, it was pretty clear that this was the way to login at 192.168.66.7 (the phpMyFAQ system) as root. Sometime in the middle of the CTF the following hint was released:
 
     HINT: Try to link the contest of your floppy and the Morse code on it!
 
@@ -273,23 +273,23 @@ So we explored and dumped the database using *mysqldump*. We then grepped for fl
 We don't know if this flag was supposed to be retrieved via the FAQ web
 service.
 
-### The .net posbox app
+### The .net Posbox app
 
-The Android App given on the welcome page did not only contain the already mentioned flag, but also an API endpoint at `posbox.fars.si`. 
+The Android app given on the welcome page did not only contain the already mentioned flag, but also an API endpoint at `posbox.fars.si`. 
 
 ```
 D/UserManagementService( 4543): handleActionLogin
 W/System.err( 4543): java.net.UnknownHostException: Unable to resolve host "posbox.fars.si": No address associated with hostname
 ```
 
-After modifying our hostfile in the way described above, we were able to access the Posbox webpage. It was in Slovenian, but we were able to navigate the page. The login on the site was ssecured by a captcha and did not contain any obvious vulnerabilities. After looking at the site again, we were able to find another client for the service.
+After modifying our hostfile in the way described above, we were able to access the Posbox webpage. It was in Slovenian, but we were able to navigate the page. The login on the site was secured by a captcha and did not contain any obvious vulnerabilities. After looking at the site again, we were able to find another client for the service.
 
-The download link for the App installer was:
+The download link for the app installer was:
 `http://posbox.fars.si/home?file=setup.exe`
 
-So after an Android App, this time they provided a C# app. The provided `setup.exe` only contained some kind of downloader, so we had to look into the binary to find the link to the actual binary. After downloading it, we again used a decompiler to decompile the app, and then looked at the code.
+So after an Android app, this time they provided a C# app. The provided `setup.exe` only contained some kind of downloader, so we had to look into the binary to find the link to the actual binary. After downloading it, we again used a decompiler to decompile the app, and then looked at the code.
 
-Somewhere in the middle of the code there was the following line, which we then used to login to the posbox web interface.
+Somewhere in the middle of the code there was the following line, which we then used to login to the Posbox web interface.
 
 ```C#
 if (this.Username == "fars@bsidesljubljana.si" && this.Password == "SuperSecurePassword")
@@ -297,7 +297,7 @@ if (this.Username == "fars@bsidesljubljana.si" && this.Password == "SuperSecureP
 
 ### Retrieving the web.config
 
-After desperately looking for more flags, we got a hint from one of the organizers to look at posbox again. We tried to get `/etc/passwd` on the posbox host using path traversal on the `file=` http parameter, but then the organizer reminded us the host was windows running IIS and we should try `web.config`.
+After desperately looking for more flags, we got a hint from one of the organizers to look at Posbox again. We tried to get `/etc/passwd` on the Posbox host using path traversal on the `file=` http parameter, but then the organizer reminded us the host was windows running IIS and we should try `web.config`.
 
 `http://posbox.fars.si/home?file=web.config` actually worked.
 
@@ -338,20 +338,20 @@ Some easier flags we found on the way by looking closely at everything (and then
 
  - The FAQ system set a Cookie that contained a flag.
  - The welcome page sent a custom HTTP header containing a flag.
- - If you were logged, the HTML source of the 404 page of `posbox.fars.si`
+ - If you were logged in, the HTML source of the 404 page of `posbox.fars.si`
    contained a flag.
  - Visiting `192.168.66.5` with the hostname `remote.fars.si` over https
    revealed another flag.
 
 ![](/images/posts/2016-03-17-blctf-remote-fars-si.png)
 
-### posbox readme.html
+### Posbox readme.html
 
 Pretty late in the CTF the following hint was released:
 
     HINT: posbox.fars.si/logs
 
-There you could retrieve a IIS log file and also the `readme.html` file:
+There you could retrieve an IIS log file and also the `readme.html` file:
 
 ```
 <!DOCTYPE html>
