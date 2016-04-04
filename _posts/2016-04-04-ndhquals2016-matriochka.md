@@ -7,8 +7,25 @@ tags: [cat/reversing, tool/radare2, tool/angr]
 ---
 
 * **Category:** Crack Me
-<!--* **Points:**     -->
-<!--* **Description:**-->
+* **Points:**  50, 100, 300, 500
+* **Description:**
+
+> Can you help me?
+>
+> Recently, I found an executable binary.
+>
+> As I'm a true newbie,
+>
+> Certainly, to solve it, I will have difficulties.
+>
+> Keep in mind, the first step is quite easy.
+>
+> Maybe the last one will be quite tricky.
+>
+> Emulating it could be a good idea.
+>
+> The challenge is available at : http://static.quals.nuitduhack.com/stage1.bin
+>
 
 
 # Write-up
