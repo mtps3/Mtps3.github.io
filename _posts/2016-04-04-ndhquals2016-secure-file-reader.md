@@ -50,7 +50,7 @@ The binary isn't big (ignoring the statically linked libc). It reads a file and
 stores it in a buffer on the stack and exits Unfortunately it calls the
 function `sym.check_size` first, which calls `stat` and checks if the filesize
 is smaller than `0xfff`. Let's see if we can trick this function. My first
-guess, was to use `mkfifo`. Getting the size of pipes, doesn't make sense so it
+guess was to use `mkfifo`. Getting the size of pipes doesn't make sense so it
 will probably be 0.
 
 ```
@@ -100,7 +100,7 @@ write(1, "The file has been saved successf"..., 37%                             
 yes :) We are dealing with a classic stack based buffer overflow. Now let's
 find the offset of the return address. I launched the program in the debugger
 and used the `cyclic` tool of `binjitsu` to generate a pattern, which we can
-look up.
+look up later to determine the offset to the return address.
 
 ```
 gdb-peda$ ! rm ./fifo; mkfifo ./fifo
@@ -139,6 +139,7 @@ functions, the linker threw them away. No luck there. But this
 `_dl_make_stack_executable` functions seems useful. A quick search revealed the
 following blog post on the radare blog:
 [Defeating baby_rop with radare2](http://radare.today/posts/defeating-baby_rop-with-radare2/)
+
 The setting is basically the same. Statically linked binary with no interesting
 functions in the binary. We could ROP our way to the `execve` syscall manually,
 but that seems tedious. I adapted the exploit from the blog post.
