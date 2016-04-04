@@ -54,6 +54,7 @@ stage2.bin: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically lin
 
 Stage 2 again validates a password. If we look at the Control Flow Graph of the
 main function (using radare `VV` and zooming out)
+
 ```
                         <@@@@@@>
                            t f
@@ -109,6 +110,7 @@ main function (using radare `VV` and zooming out)
 ```
 
 We can see a very clear pattern. If we take a look at the first part
+
 ```
 [0x0040076b 5% 230 stage2.bin]> pd $r @ main+121 # 0x40076b
 │           0x0040076b      c745ec010000.  mov dword [rbp - local_14h], 1
@@ -130,7 +132,7 @@ program if this is 1, the password is validated.
 
 So I reversed the first three characters of the password, but then it got
 annoying. There must be a better. Now I always wanted to try
-(angr)[http://angr.io], a symbolic/concolic execution framework by the
+[angr](http://angr.io) , a symbolic/concolic execution framework by the
 shellphish guys. I never used it so I read some examples and quickly whipped up
 a script to solve this challenge:
 

@@ -138,7 +138,7 @@ OK so apparently because the program doesn't use any of the system or exec
 functions, the linker threw them away. No luck there. But this
 `_dl_make_stack_executable` functions seems useful. A quick search revealed the
 following blog post on the radare blog:
-(Defeating baby_rop with radare2)[http://radare.today/posts/defeating-baby_rop-with-radare2/]
+[Defeating baby_rop with radare2](http://radare.today/posts/defeating-baby_rop-with-radare2/)
 The setting is basically the same. Statically linked binary with no interesting
 functions in the binary. We could ROP our way to the `execve` syscall manually,
 but that seems tedious. I adapted the exploit from the blog post.
