@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "hack.lu CTF 2014 write-up: Killy The Bit"
+title:  "hack.lu CTF 2014: Killy The Bit"
 author: f0rki
 categories: writeup
 tags: [cat/web, lang/php]
@@ -12,8 +12,9 @@ This was a fun challenge :) The setting was that the royal bank of Fluxembourg
 was hacked by Killy the Bit and now they set up a page to reset the user
 passwords. Because Killy owes us a favor we received the source code for the
 password resetting page. So the whole thing was php using mysql as a database.
-Inspecting the source you can easily spot the SQL injection vulnerability.
-But finding it wasn't the challenge, actually exploiting it was.
+Inspecting the source you can easily spot the SQL injection vulnerability.  But
+finding it wasn't the challenge, actually exploiting it was.
+
 
 ```php
 <?php
@@ -97,3 +98,5 @@ thus we get to the interesting else branch.
    and therefore we get everything in the passwd column.
 
 ...and we got the flag :)
+
+    flag{Killy_The_Bit_Is_Wanted_for_9000_$$_FoR_FlipPing_Bits}
