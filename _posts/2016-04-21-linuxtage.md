@@ -6,8 +6,6 @@ author: verr
 categories: meeting
 ---
 
-*Happy New Year to everyone! Stay fuzzy!*
-
 This year's [Grazer Linuxtage](https://linuxtage.at/) are going to happen April 29th to 30th. A lot of interesting talks, workshops and people ahead!
 
 And LosFuzzys is part of it! Two of our members are going to give a presentation about [A CTF Hackers Toolboxb](https://glt16-programm.linuxtage.at/events/129.html), on Saturday at 15:00. 
