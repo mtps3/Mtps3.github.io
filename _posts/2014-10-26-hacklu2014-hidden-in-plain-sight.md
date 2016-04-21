@@ -60,4 +60,5 @@ console.log(hmac_sign("testuser/flag.txt"))
 After running this with node we get the HMAC and obtaining the flag is simply a
 matter of:
 
-    curl https://wildwildweb.fluxfingers.net:1409/files/testuser/flag.txt/4a332c7f27909f85a529393cea72301393f84cf5908aa2538137776f78624db4
+    $ curl https://wildwildweb.fluxfingers.net:1409/files/testuser/flag.txt/4a332c7f27909f85a529393cea72301393f84cf5908aa2538137776f78624db4
+    flag{unicode_stego_is_best_stego}

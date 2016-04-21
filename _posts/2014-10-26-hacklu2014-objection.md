@@ -10,8 +10,8 @@ tags: [tech/nodejs, lang/javascript]
 
 So we got the source for something that looked like CoffeeScript, but had
 really strange string literals. After some investigation I found out, that
-this was in fact (coco)[https://github.com/satyr/coco] source code.
-Coco in turn is a fork of (CoffeeScript)[http://coffeescript.org/]. Both
+this was in fact [coco](https://github.com/satyr/coco) source code.
+Coco in turn is a fork of [CoffeeScript](http://coffeescript.org/). Both
 compile to JavaScript.
 The service allows you to login with the admin password that is read from a
 file. If the user is authenticated as admin, he can read the secret token
@@ -89,7 +89,7 @@ interpreter and poke around a little bit by hitting tab.
     x.toLocaleString        x.toString              x.valueOf
 
 
-(__defineGetter__)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/__defineGetter__]
+[__defineGetter__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/__defineGetter__)
 seems useful, since the properties 'is_admin' and 'token'
 are accessed (you can spot properties in CoffeeScript and coco by the @
 prefix). It expects the following arguments
@@ -120,7 +120,7 @@ function. The anonymous function compiled to JavaScript looks like this:
 
 This means this anonymous function will return the return value of the 'write'
 method of the con object, which is an socket object. The
-(socket.write)[https://nodejs.org/api/net.html#net_socket_write_data_encoding_callback].
+[socket.write](https://nodejs.org/api/net.html#net_socket_write_data_encoding_callback).
 function will return true if the entire data was flushed to the kernel buffer.
 Since we only write the string "undefined\n", chances are pretty good this will
 happen. So accessing the 'is_admin' property will in fact call this anonymous
