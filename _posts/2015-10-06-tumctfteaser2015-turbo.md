@@ -90,8 +90,12 @@ didn't increase the length, so we are on a good track. Now we have to guess
 the following bytes, of which we can assume they are printable. So we start
 by supplying `hxp{a`, `hxp{b` etc. until we receive a ciphertext that has
 the same length as only `hxp{`. Then we have guessed correct and we can continue
-with the next byte: `hxp{1a`, `hxp{1b` etc. I wrote the following script to solve
-the challenge:
+with the next byte: `hxp{1a`, `hxp{1b` etc.
+
+I wrote the following script, which will guess the flag byte by byte using the
+oracle. Unfortunately I didn't manage to complete the script in time and it
+finished guessing only a few minutes after the CTF ended. The service was still
+up so I got the flag `hxp{1_r34LLy_L1k3_0r4cL3s__n0T_7h3_c0mp4nY}`
 
 ```python
 import sys
@@ -236,8 +240,3 @@ log.info("final flag should be " + flag)
 with open("./real_flag.txt", "w") as f:
     f.write(flag)
 ```
-
-Running the script will guess the flag byte for byte. Unfortunately I didn't manage to
-complete the script in time and it finished guessing only a few minutes after the CTF
-ended. The service was still up so I got the flag `hxp{1_r34LLy_L1k3_0r4cL3s__n0T_7h3_c0mp4nY}`
-
