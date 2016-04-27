@@ -98,6 +98,7 @@ finished guessing only a few minutes after the CTF ended. The service was still
 up so I got the flag `hxp{1_r34LLy_L1k3_0r4cL3s__n0T_7h3_c0mp4nY}`
 
 ```python
+
 import sys
 from pwn import remote, log, context, process
 import string
@@ -239,4 +240,5 @@ log.info("final flag should be " + flag)
 
 with open("./real_flag.txt", "w") as f:
     f.write(flag)
+
 ```
