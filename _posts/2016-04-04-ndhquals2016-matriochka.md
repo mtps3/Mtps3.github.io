@@ -3,7 +3,7 @@ layout: post
 title:  "Nuit du Hack Quals 2016: Matriochka"
 author: f0rki
 categories: writeup
-tags: [cat/reversing, tool/radare2, tool/angr]
+tags: [cat/reversing, tool/radare, tool/angr]
 ---
 
 * **Category:** Crack Me
