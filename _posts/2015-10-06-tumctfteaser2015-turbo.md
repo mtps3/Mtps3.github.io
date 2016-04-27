@@ -226,8 +226,8 @@ for i in range(len(previous), flaglen):
         else:
             log.info("guess was wrong")
     if foundit:
-        log.info("Current flag prefix guess is hxp{{{}"
-                 .format("".join(previous)))
+        log.info("Current flag prefix guess is \'hxp{}{}\'"
+                 .format("{", "".join(previous)))
     else:
         log.error("Couldn't guess char {}".format(i))
     if previous[-1] == "}":
