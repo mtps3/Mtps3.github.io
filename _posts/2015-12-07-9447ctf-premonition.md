@@ -3,7 +3,7 @@ layout: post
 title: "9447ctf: premonition"
 author: f0rki
 categories: writeup
-tags: [cat/web, lang/sql, tools/python-requests]
+tags: [cat/web, lang/sql, tool/python-requests]
 ---
 
 * **Category:** Web
