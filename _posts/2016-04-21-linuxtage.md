@@ -12,4 +12,4 @@ And LosFuzzys is part of it! Two of our members are going to give a presentation
 
 In our talk we are going to introduce the concept of CTF to a (hopefully) large audience of people interested in all things security. the main focus of our presentation will be the tool used by us (and other teams) in CTFs. So there should be something new for everyone ...
 
-**Update:** [Our presentation is online!](https://github.com/LosFuzzys/presentations/raw/master/linuxtage-2016/presentation.pdf)
+**Update:** [Our presentation is online!](https://github.com/LosFuzzys/presentations/raw/master/linuxtage-2016/glt16-ctf-hackers-toolbox.pdf)
