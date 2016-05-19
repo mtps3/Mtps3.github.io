@@ -3,7 +3,7 @@ layout: post
 title:  "Internetwache CTF 2016: Brute with Force (code 80)"
 author: verr
 categories: writeup
-tags: [cat/code, tools/pwntools]
+tags: [cat/code, tool/pwntools]
 ---
 
 * **Category:** Code
