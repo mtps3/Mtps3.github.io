@@ -18,6 +18,12 @@ All our meetings are open to everyone, so if you are not part of LosFuzzys, feel
 <!-- generated using scripts/getPastCTFs.py  -->
 
 * 2016
+  * DEF CON CTF Qualifier <span class="discreet">(place 252 of 276)</span>
+  * TU CTF <span class="discreet">(place 42 of 435)</span>
+  * Google Capture The Flag <span class="discreet">(place 361 of 903)</span>
+  * PlaidCTF <span class="discreet">(place 519 of 812)</span>
+  * Nuit du Hack CTF Quals <span class="discreet">(place 69 of 447)</span>
+  * BCTF <span class="discreet">(place 196 of 588)</span>
   * BSides Ljubljana CTF <span class="discreet">(place 1 of 14)</span>
   * Boston Key Party CTF <span class="discreet">(place 183 of 764)</span>
   * Internetwache CTF <span class="discreet">(place 27 of 647)</span>
