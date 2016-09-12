@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Training: crypto"
+title:  "Training: web"
 when: "Sep 08, 2016"
 author: verr & kw
 categories: meeting
