@@ -13,7 +13,7 @@ categories: meeting
 * **Who?** you! (please let us know if you plan to come.)
 
 
-**Goal?** Taking a closer look at cryptography; since it's one of the essential skills for every CTF so far. For instance where from the *ASIS CTF 9* of 30 challenges were tagged as crypto.
+**Goal?** Taking a closer look at cryptography; since it's one of the essential skills for every CTF so far. For instance were from the *ASIS CTF* 9 of 30 challenges tagged as crypto.
 
 ### Roadmap:
 
