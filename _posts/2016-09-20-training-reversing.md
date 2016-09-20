@@ -8,7 +8,7 @@ categories: meeting
 
 Another week, another training session!
 
-*[A wild binary appears!](www.slideshare.net/stefan2904/a-ctf-hackers-toolbox-61520370/21) What to do next? Hacker uses reverse engineering ... It’s super effective!*
+*[A wild binary appears!](https://www.slideshare.net/stefan2904/a-ctf-hackers-toolbox-61520370/21) What to do next? Hacker uses reverse engineering ... It’s super effective!*
 
 * **When?** Thursday (22. September), 18:00 - 21:00 (of course you can drop by later, leave earlier, or stay longer ;)
 * **Where?** @IAIK, Inffeldgasse 16a (meet up at IFEG064 (project room, ground floor); depending on how many will come, we will go to the meeting or seminar room)
