@@ -18,6 +18,7 @@ All our meetings are open to everyone, so if you are not part of LosFuzzys, feel
 <!-- generated using scripts/getPastCTFs.py  -->
 
 * 2016
+  * DefCamp CTF Qualification <span class="discreet">(place 2 of 116)</span>
   * CSAW CTF Qualification Round <span class="discreet">(place 56 of 1274)</span>
   * ASIS CTF Finals <span class="discreet">(place 23 of 343)</span>
   * SECUINSIDE CTF Quals <span class="discreet">(place 64 of 395)</span>
