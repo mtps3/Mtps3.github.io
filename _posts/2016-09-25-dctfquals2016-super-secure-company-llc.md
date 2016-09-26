@@ -249,24 +249,24 @@ We are gonna use two XSS stages.
     and uploads a file.
 
     But the file upload code disallowed certain file extensions:
-```php
-<?php
-[...]
-if($extension == '' || $extension == 'php' || $extension == 'htaccess'
-   || $extension == 'pl' || $extension == 'py' || $extension == 'c'
-   || $extension == 'cpp' || $extension == 'ini' || $extension == 'html') { // fail
-[...]
-?>
-```
+
+    ```php
+    <?php
+    [...]
+    if($extension == '' || $extension == 'php' || $extension == 'htaccess'
+       || $extension == 'pl' || $extension == 'py' || $extension == 'c'
+       || $extension == 'cpp' || $extension == 'ini' || $extension == 'html') { // fail
+    [...]
+    ?>
+    ```
+
     Fortunately the `.php5` extension was not part of the blacklist, so we just used that.
 
-4. **Upload file with `.php5` extension** and visit
-
-   `http://10.13.37.13/uploads/file_with_more_than_twelve_chars.php5`
-
+4. **Upload file with `.php5` extension** and visit  
+   `http://10.13.37.13/uploads/file_with_more_than_twelve_chars.php5`  
    to execute the webshell.
 5. **Use webshell** to execute `find / -name *flag* | xargs cat`, which revealed the flag in
-   `/flag`:**
+   `/flag`:
 
    `DCTF{5a42e723159e537443b99ba7f95fbe04}`
 
