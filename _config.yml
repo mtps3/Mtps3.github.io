@@ -8,14 +8,15 @@ twitter_username: losfuzzys
 github_username:  losfuzzys
 
 # Build settings
-markdown: kramdown
+#markdown: kramdown
+markdown: Redcarpet
 permalink: pretty
 
-kramdown:
-    input: GFM
+#kramdown:
+#    input: GFM
 
 # github gems
-# (see https://help.github.com/categories/github-pages-features/)
+# (see https://help.github.com/categories/github-pages-features/ )
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
