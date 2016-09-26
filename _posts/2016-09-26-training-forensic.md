@@ -14,7 +14,7 @@ Last training in September. ;)
 * **Who?** you! (please let us know if you plan to come.)
 
 
-**Goal?** To round out `Jeopardy September`, we will take a look at Forensic challenges. Secret data can be hidden or modulated in images, wav, pdf, zip, exe, network dumps, disk dumps, etc. - also called steganography. How do discover it?
+**Goal?** To round out `Jeopardy September`, we will take a look at Forensic challenges. Secret data can be hidden or modulated in images, wav, pdf, zip, exe, network dumps, disk dumps, etc. - also called steganography. How to discover it?
 
 
 ### Roadmap:
