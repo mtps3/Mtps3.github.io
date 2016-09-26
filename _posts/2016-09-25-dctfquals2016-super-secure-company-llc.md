@@ -245,22 +245,22 @@ We are gonna use two XSS stages.
    this way we change the origin back to `127.0.0.1`, can execute JS in the context of the bot and are able to perfrom `POST` requests without violating the same-origin policy and bypassing the admin check.
 
 3. **Stage 2 payload makes an ajax `POST` request** to  
-    `http://127.0.0.1/admin.php?page=upload`  
-    and uploads a file.
+   `http://127.0.0.1/admin.php?page=upload`  
+   and uploads a file.
 
-    But the file upload code disallowed certain file extensions:
+   But the file upload code disallowed certain file extensions:
 
-     ```php
-     <?php
-     [...]
-     if($extension == '' || $extension == 'php' || $extension == 'htaccess'
-        || $extension == 'pl' || $extension == 'py' || $extension == 'c'
-        || $extension == 'cpp' || $extension == 'ini' || $extension == 'html') { // fail
-     [...]
-     ?>
-     ```
-
-    Fortunately the `.php5` extension was not part of the blacklist, so we just used that.
+   ```php
+   <?php
+   [...]
+   if($extension == '' || $extension == 'php' || $extension == 'htaccess'
+      || $extension == 'pl' || $extension == 'py' || $extension == 'c'
+      || $extension == 'cpp' || $extension == 'ini' || $extension == 'html') { // fail
+   [...]
+   ?>
+   ```
+   
+   Fortunately the `.php5` extension was not part of the blacklist, so we just used that.
 
 4. **Upload file with `.php5` extension** and visit  
    `http://10.13.37.13/uploads/file_with_more_than_twelve_chars.php5`  
