@@ -257,7 +257,7 @@ We are gonna use two XSS stages.
 
     But the file upload code disallowed certain file extensions:
 
-    ```php
+```php
 <?php
 [...]
 if($extension == '' || $extension == 'php' || $extension == 'htaccess'
@@ -265,7 +265,7 @@ if($extension == '' || $extension == 'php' || $extension == 'htaccess'
    || $extension == 'cpp' || $extension == 'ini' || $extension == 'html') { // fail
 [...]
 ?>
-    ```
+```
 
     Fortunately the `.php5` extension was not part of the blacklist, so we just used that.
 
