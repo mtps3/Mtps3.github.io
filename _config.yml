@@ -8,12 +8,11 @@ twitter_username: losfuzzys
 github_username:  losfuzzys
 
 # Build settings
-#markdown: kramdown
-markdown: Redcarpet
+markdown: kramdown
 permalink: pretty
 
-#kramdown:
-#    input: GFM
+kramdown:
+    input: GFM
 
 # github gems
 # (see https://help.github.com/categories/github-pages-features/ )
