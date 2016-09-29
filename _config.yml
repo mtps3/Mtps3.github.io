@@ -22,6 +22,10 @@ gems:
 #  - jekyll-mentions
 
 authors:
+  fuzzy:
+    display_name: Fuzzy The Bug
+    twitter: LosFuzzys
+    web: https://hack.more.systems
   verr:
     display_name: verr
     twitter: stefan2904
@@ -29,6 +33,7 @@ authors:
     display_name: f0rki
     twitter: f0rki
     web: https://f0rki.at
+    github: f0rki
   kw:
     twitter: __kaydoubleu__
   skogler:

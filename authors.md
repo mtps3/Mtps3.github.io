@@ -19,10 +19,10 @@ hidden: true
   Personal Website: <a href="{{ info.web }}">{{ info.web }}</a><br />
             {% endif %}
             {% if info.twitter %}
-  <a href="https://twitter.com/{{ info.twitter }}">Twitter</a><br />
+  on <a href="https://twitter.com/{{ info.twitter }}">Twitter</a><br />
             {% endif %}
             {% if info.github %}
-  <a href="{{ info.github }}">Github</a><br />
+  on <a href="https://github.com/{{ info.github }}">Github</a><br />
             {% endif %}
   </p>
 		{% endif %}

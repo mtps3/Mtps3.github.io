@@ -17,13 +17,7 @@
 		{% else %}
             {% assign name = (poster2 | strip) %}
 		{% endif %}
-		{% if author.web %}
-        <a href="{{ author.web }}">{{ name }}</a>
-		{% elsif author.twitter %}
-        <a href="https://twitter.com/{{ author.twitter }}">{{ name }}</a>
-		{% elsif author.github %}
-        <a href="https://github.com/{{ author.github }}">{{ name }}</a>
-		{% endif %}
+        <a href="/authors/#{{ poster2 }}-ref">{{ name }}</a>
 	{% else %}
 		A writeup by {{ poster2 }}
 	{% endif %}
