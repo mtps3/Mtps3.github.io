@@ -5,7 +5,9 @@ layout: default
 
   <header class="post-header">
     <h2>{{ page.title }}</h2>
-    {% if page.author and page.categories contains 'writeup'  %}<p class="meta">A writeup by {{ page.author }}</p>{% endif %}
+    {% if page.author and page.categories contains 'writeup'  %}
+      {% include author.html %}
+    {% endif %}
     <!--<p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p> -->
   </header>
 
