@@ -3,28 +3,29 @@
 <p class="meta">
 {% for poster in posters %}
 	{% assign poster2 = poster | strip %}
-
+    {% if forloop.first %}
+        A writeup by
+    {% elsif forloop.last %}
+        {{", and"}}
+    {% else %}
+        {{", "}}
+    {% endif %}
 	{% if site.authors[poster2] %}
 		{% assign author = site.authors[poster2] %}
-		{% if forloop.index0 < 1 %}
-			A writeup by
-		{% else %}
-			<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &amp;
-		{% endif %}
-		{% if author.web %}
-			<a href="{{ author.web }}">
-		{% endif %}
 		{% if author.display_name %}
-			{{ author.display_name }}
+            {% assign name = (author.display_name | strip) %}
 		{% else %}
-			{{ page.author }}
+            {% assign name = (poster2 | strip) %}
 		{% endif %}
 		{% if author.web %}
-			</a>
+        <a href="{{ author.web }}">{{ name }}</a>
+		{% elsif author.twitter %}
+        <a href="https://twitter.com/{{ author.twitter }}">{{ name }}</a>
+		{% elsif author.github %}
+        <a href="https://github.com/{{ author.github }}">{{ name }}</a>
 		{% endif %}
 	{% else %}
 		A writeup by {{ poster2 }}
 	{% endif %}
-
 {% endfor %}
 </p>

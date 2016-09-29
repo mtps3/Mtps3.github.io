@@ -4,7 +4,7 @@ title: Writeups
 permalink: /writeups/
 ---
 
-<span class="discreet"><a href="/tags">Sort by tag</a></span>
+<span class="discreet">Sort by <a href="/tags">tag</a>, <a href="/authors">author</a></span>
 
 {% for post in site.categories.writeup %}
    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}

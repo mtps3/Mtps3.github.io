@@ -4,7 +4,7 @@ title: Tags
 hidden: true
 ---
 
-<span class="discreet"><a href="/writeups">Sort by date</a></span>
+<span class="discreet">Sort by <a href="/writeups">date</a>, <a href="/authors">author</a></span>
 
 {% assign sorted_tags = (site.tags | sort:0) %}
 {% for tag in sorted_tags  %}
