@@ -20,3 +20,20 @@ gems:
   - jekyll-sitemap
   - jekyll-redirect-from
 #  - jekyll-mentions
+
+authors:
+  verr:
+    display_name: verr
+    web: https://twitter.com/stefan2904
+  f0rki:
+    display_name: f0rki
+    web: https://twitter.com/f0rki
+  kw:
+    web: https://twitter.com/__kaydoubleu__
+  skogler:
+    display_name: skogler
+  creed:
+  kree:
+  sigttou:
+    web: https://twitter.com/sigttou
+  roman:
