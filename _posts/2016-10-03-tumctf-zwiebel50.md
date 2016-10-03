@@ -11,6 +11,8 @@ tags: [cat/reversing, tool/radare2, tool/angr]
 * **Description:**
 
 > I found this onion in my kitchen, may I ask you to dissect it?
+>
+> https://www.youtube.com/watch?v=LowwCyZHBBk
 
 ## Write-up
 
