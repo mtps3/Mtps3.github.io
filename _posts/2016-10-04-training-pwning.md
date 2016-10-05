@@ -9,9 +9,9 @@ categories: meeting
 As already announced in the last training session, our new training date during the winter semester is Wednesday from 18:15 c.t. to 20:30.
 We are, if not otherwise announced, located in IAIK's seminar room (IFEG042).
 
-The next training: *Pwning to the Aid with f0rki*
+The next training: *Step up your game and start pwning with f0rki*
 
-* **When?** Wednesday (4. October), 18:15 - 20:30 
+* **When?** Wednesday (4. October), 18:15 - 20:30
 * **Where?** @IAIK, Inffeldgasse 16a, IFEG042 (seminar room, ground floor)
 * **Who?** you! (please let us know if you plan to come.)
 
@@ -19,7 +19,7 @@ The next training: *Pwning to the Aid with f0rki*
 ### Roadmap:
 
 0. Organizational Matters
-1. Pwning to the Aid with f0rki! Very interactive session, in where we will try to pwn the provided challenges :)
+1. Very interactive pwning session, in where we will try to pwn the provided challenges :)
 2. If time is left, making an open session where everybody can hack on whatever they want; e.g. solving challenges from other CTFs or wargames.
 (Taking a break when we need one.)
 
