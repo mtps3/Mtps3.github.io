@@ -75,6 +75,7 @@ user
 ```
 Ok, it looks like we are not allowed to read the flag. Back to IDA again.
 Apparently there is that:
+
 ```
 [...]    
 seteuid(v1);
