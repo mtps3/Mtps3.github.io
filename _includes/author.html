@@ -17,9 +17,9 @@
 		{% else %}
             {% assign name = (poster2 | strip) %}
 		{% endif %}
-        <a href="/authors/#{{ poster2 }}-ref">{{ name }}</a>
 	{% else %}
-		{{ poster2 }}
+        {% assign name = (poster2 | strip) %}
 	{% endif %}
+    <a href="/authors/#{{ poster2 }}-ref">{{ name }}</a>
 {% endfor %}
 </p>
