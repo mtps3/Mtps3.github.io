@@ -18,6 +18,7 @@ tags: [cat/pwn, tool/pwntools]
 
 ## Write-up
 When we start the binary we are presented with a banner and menu.
+
 ```
  _              _       _        _ _  __
 | |__  ___  ___| |__ __| |_  ___| | |/ _|
@@ -36,6 +37,7 @@ This offset is neither checked against the size of the book nor is it checked if
 Additionally, when entering the name of book we want to read, we can overflow the 'book_to_read' buffer.
 
 Let's checksec:
+
 ```
 gdb-peda$ checksec
 CANARY    : ENABLED
@@ -82,12 +84,14 @@ setegid(v2);
 ```
 
 So we have to change the gid to the flag gid.
+
 ```
 user:x:1000:1000::/home/user/:/usr/sbin/nologin
 flag:x:1001:1001::/home/flag/:/usr/sbin/nologin
 ```
 
 We added the following line to our exploit
+
 ```
 shellcode += asm(shellcraft.amd64.linux.setgid(1001), arch="amd64")
 ```
