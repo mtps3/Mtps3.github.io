@@ -18,6 +18,8 @@ All our meetings are open to everyone, so if you are not part of LosFuzzys, feel
 <!-- generated using scripts/getPastCTFs.py  -->
 
 * 2016
+  * HITCON CTF  Quals <span class="discreet">(place 137 of 735)</span>
+  * Hackover CTF <span class="discreet">(place 9 of 175)</span>
   * TUM CTF <span class="discreet">(place 21 of 435)</span>
   * DefCamp CTF Qualification <span class="discreet">(place 2 of 116)</span>
   * CSAW CTF Qualification Round <span class="discreet">(place 56 of 1274)</span>
