@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "Training: web"
-when: "Sep 12, 2016"
+when: "Oct 12, 2016"
 author: verr & kw
 categories: meeting
 ---
 
 Another week, another training:
 
-* **When?** Thursday (12. September), 18:15 - 20:30 (c.t.)
+* **When?** Thursday (12. October), 18:15 - 20:30 (c.t.)
 * **Where?** @IAIK, Inffeldgasse 16a, IFEG042 (seminar room, ground floor)
 * **Who?** you! (please let us know if you plan to come.)
 
