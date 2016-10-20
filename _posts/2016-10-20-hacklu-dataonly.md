@@ -3,7 +3,7 @@ layout: post
 title: "hack.lu CTF 2016: dataonly"
 author: f0rki
 categories: writeup
-tags: [cat/pwn, tool/pwntools, vuln/heap]
+tags: [cat/pwn, tool/pwntools, vuln/heap, vuln/bufferoverflow, vuln/customa-lloctor]
 ---
 
 * **Category:** Exploiting
