@@ -18,6 +18,7 @@ All our meetings are open to everyone, so if you are not part of LosFuzzys, feel
 <!-- generated using scripts/getPastCTFs.py  -->
 
 * 2016
+  <!-- place 53 (198.005 points) -->
   * EKOPARTY CTF <span class="discreet">(place 6 of 721)</span>
   * Hack.lu CTF <span class="discreet">(place 29 of 174)</span>
   * HITCON CTF  Quals <span class="discreet">(place 137 of 735)</span>
@@ -41,6 +42,7 @@ All our meetings are open to everyone, so if you are not part of LosFuzzys, feel
   * EFF CTF
   * Insomni'hack teaser <span class="discreet">(place 44 of 245)</span>
 * 2015
+  <!-- place 152 (73.994 points) -->
   * 32C3 CTF <span class="discreet">(place 58 of 389)</span>
   * FAUST CTF <span class="discreet">(place 6 of 62)</span>
   * 9447 Security Society CTF <span class="discreet">(place 24 of 595)</span>
@@ -52,6 +54,7 @@ All our meetings are open to everyone, so if you are not part of LosFuzzys, feel
   * Boston Key Party CTF <span class="discreet">(place 90 of 822)</span>
   * Ghost in the Shellcode <span class="discreet">(place 283 of 321)</span>
 * 2014
+  <!-- place 424 (22.027 points) -->
   * RuCTFE <span class="discreet">(place 62 of 133)</span>
   * Hack.lu CTF <span class="discreet">(place 85 of 395)</span>
   * PlaidCTF <span class="discreet">(place 133 of 867)</span>
