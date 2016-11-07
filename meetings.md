@@ -18,6 +18,8 @@ All our meetings are open to everyone, so if you are not part of LosFuzzys, feel
 <!-- generated using scripts/getPastCTFs.py  -->
 
 * 2016
+  <!-- place 51 (209.993 points) -->
+  * Hack The Vote <span class="discreet">(place 16 of 1030)</span>
   <!-- place 53 (198.005 points) -->
   * EKOPARTY CTF <span class="discreet">(place 6 of 721)</span>
   * Hack.lu CTF <span class="discreet">(place 29 of 174)</span>
