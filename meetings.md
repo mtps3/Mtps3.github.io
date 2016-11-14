@@ -18,6 +18,8 @@ All our meetings are open to everyone, so if you are not part of LosFuzzys, feel
 <!-- generated using scripts/getPastCTFs.py  -->
 
 * 2016
+  <!-- place 51 (224.200 points) -->
+  * RuCTFE <span class="discreet">(place 20 of 131)</span>
   <!-- place 51 (209.993 points) -->
   * Hack The Vote <span class="discreet">(place 16 of 1030)</span>
   <!-- place 53 (198.005 points) -->
