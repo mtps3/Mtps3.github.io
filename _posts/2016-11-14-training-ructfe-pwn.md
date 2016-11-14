@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Training: crypto"
+title:  "Training: RuCTFe recap + Pwning"
 when: "Nov 16, 2016"
 author: verr & kw
 categories: meeting
