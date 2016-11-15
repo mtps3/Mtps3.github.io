@@ -9,7 +9,7 @@ categories: meeting
 RuCTFe Lessons Learned + Pwning Training
 
 * **When?** Wednesday (16. Noember), 18:15 - 20:00 (c.t.)
-* **Where?** @IAIK, Inffeldgasse 16a, IFEG042 (seminar room, ground floor)
+* **Where?** @IAIK, Inffeldgasse 16a, IFEG074 (meeting room, ground floor)
 * **Who?** you! (please let us know if you plan to come.)
 
 
@@ -36,11 +36,11 @@ challenges provided by creed et al. :)
 ### Roadmap:
 
 0. Organizational Matters
-  a. Christmas Celebration
+    a. Christmas Celebration
 1. Lessons Learned RuCTFe 2016
-  a. Short recap: how was it for each Fuzzy?
-  b. What went well?
-  c. What did go wrong & where do we see room for improvements?
+    a. Short recap: how was it for each Fuzzy?
+    b. What went well?
+    c. What did go wrong & where do we see room for improvements?
 3. Pwning with creed et al.
 
 If you have any questions, don't hesitate to ask.
