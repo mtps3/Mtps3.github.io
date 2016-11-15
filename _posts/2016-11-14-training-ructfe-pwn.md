@@ -35,12 +35,12 @@ challenges provided by creed et al. :)
 
 ### Roadmap:
 
-0. Organizational Matters
-    a. Christmas Celebration
+0. Organizational Matters 
+    0. Christmas Celebration
 1. Lessons Learned RuCTFe 2016
-    a. Short recap: how was it for each Fuzzy?
-    b. What went well?
-    c. What did go wrong & where do we see room for improvements?
+    0. Short recap: how was it for each Fuzzy?
+    1. What went well?
+    2. What did go wrong & where do we see room for improvements?
 3. Pwning with creed et al.
 
 If you have any questions, don't hesitate to ask.
