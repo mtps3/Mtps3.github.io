@@ -10,64 +10,15 @@ permalink: /meetings/
 {% endfor %}
 </ul>
 
+subscribe [via Atom]({{ "/feed.xml" | prepend: site.baseurl }})
+
+
 **IMPORTANT:**
 All our meetings are open to everyone, so if you are not part of LosFuzzys, feel free to come anyway. And if you know some people interested in what we do, please invite them. :-)
 
+
 ## Calendar
 
+You can subscribe to our calendar with your favorite application using [our iCal feed](https://calendar.google.com/calendar/ical/2904.cc_lq509kkank97fftfkjm3gmbq70%40group.calendar.google.com/public/basic.ics).
+
 <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&title=LosFuzzys%27%20Calendar&amp;showTitle=0&amp;showCalendars=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23c0c0c0&amp;src=2904.cc_lq509kkank97fftfkjm3gmbq70%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=Europe%2FVienna" style="border-width:0" width="600" height="600" frameborder="0" scrolling="no"></iframe>
-
-You can also subscribe with your favorite calendar application using [our iCal feed](https://calendar.google.com/calendar/ical/2904.cc_lq509kkank97fftfkjm3gmbq70%40group.calendar.google.com/public/basic.ics).
-
-## Past CTF participations
-
-<!-- generated using scripts/getPastCTFs.py  -->
-
-* 2016
-  <!-- place 51 (224.200 points) -->
-  * RuCTFE <span class="discreet">(place 20 of 131)</span>
-  <!-- place 51 (209.993 points) -->
-  * Hack The Vote <span class="discreet">(place 16 of 1030)</span>
-  <!-- place 53 (198.005 points) -->
-  * EKOPARTY CTF <span class="discreet">(place 6 of 721)</span>
-  * Hack.lu CTF <span class="discreet">(place 29 of 174)</span>
-  * HITCON CTF  Quals <span class="discreet">(place 137 of 735)</span>
-  * Hackover CTF <span class="discreet">(place 9 of 175)</span>
-  * TUM CTF <span class="discreet">(place 21 of 435)</span>
-  * DefCamp CTF Qualification <span class="discreet">(place 2 of 116)</span>
-  * CSAW CTF Qualification Round <span class="discreet">(place 56 of 1274)</span>
-  * ASIS CTF Finals <span class="discreet">(place 23 of 343)</span>
-  * SECUINSIDE CTF Quals <span class="discreet">(place 64 of 395)</span>
-  * DEF CON CTF Qualifier <span class="discreet">(place 252 of 276)</span>
-  * TU CTF <span class="discreet">(place 42 of 435)</span>
-  * Google Capture The Flag <span class="discreet">(place 361 of 903)</span>
-  * PlaidCTF <span class="discreet">(place 519 of 812)</span>
-  * Nuit du Hack CTF Quals <span class="discreet">(place 69 of 447)</span>
-  * BCTF <span class="discreet">(place 196 of 588)</span>
-  * BSides Ljubljana CTF <span class="discreet">(place 1 of 14)</span>
-  * Boston Key Party CTF <span class="discreet">(place 183 of 764)</span>
-  * Internetwache CTF <span class="discreet">(place 27 of 647)</span>
-  * Sharif University CTF <span class="discreet">(place 15 of 447)</span>
-  * HackIM  <span class="discreet">(place 61 of 535)</span>
-  * EFF CTF
-  * Insomni'hack teaser <span class="discreet">(place 44 of 245)</span>
-* 2015
-  <!-- place 152 (73.994 points) -->
-  * 32C3 CTF <span class="discreet">(place 58 of 389)</span>
-  * FAUST CTF <span class="discreet">(place 6 of 62)</span>
-  * 9447 Security Society CTF <span class="discreet">(place 24 of 595)</span>
-  * RuCTFE <span class="discreet">(place 22 of 140)</span>
-  * TUM CTF Teaser <span class="discreet">(place 45 of 445)</span>
-  * Defcamp CTF Qualification <span class="discreet">(place 96 of 378)</span>
-  * PoliCTF <span class="discreet">(place 71 of 325)</span>
-  * DEF CON CTF Qualifier <span class="discreet">(place 145 of 284)</span>
-  * Boston Key Party CTF <span class="discreet">(place 90 of 822)</span>
-  * Ghost in the Shellcode <span class="discreet">(place 283 of 321)</span>
-* 2014
-  <!-- place 424 (22.027 points) -->
-  * RuCTFE <span class="discreet">(place 62 of 133)</span>
-  * Hack.lu CTF <span class="discreet">(place 85 of 395)</span>
-  * PlaidCTF <span class="discreet">(place 133 of 867)</span>
-
-
-subscribe [via Atom]({{ "/feed.xml" | prepend: site.baseurl }})
