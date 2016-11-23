@@ -47,6 +47,7 @@ def getPastCTFs():
                 continue
             ctf_place = cols[1].string
             ctf_name = cols[2].string.replace(year, '').strip()
+            ctf_name = ctf_name[:-1] if ctf_name.endswith('-') else ctf_name
             ctf_url = cols[2].find('a').get('href')
             ctf_participants = getNumberOfParticipatingTeams(ctf_url)
             print '  * %s <span class="discreet">(place %s of %s)</span>' % (ctf_name, ctf_place, ctf_participants)
