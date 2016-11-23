@@ -6,7 +6,7 @@ author: verr & kw
 categories: meeting
 ---
 
-Our first Reversing Training!
+A Reversing Training!
 
 * **When?** Wednesday (23. Noember), 18:15 - 20:00 (c.t.)
 * **Where?** @IAIK, Inffeldgasse 16a, IFEG074 (meeting room, ground floor)
