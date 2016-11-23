@@ -13,7 +13,7 @@ Check out [our (almost complete) CTF history on CTFtime](https://ctftime.org/tea
 
 * 2016
   <!-- place 49 (233.160 points) -->
-  * Qiwi-Infosec CTF- <span class="discreet">(place 15 of 234)</span>
+  * Qiwi-Infosec CTF <span class="discreet">(place 15 of 234)</span>
   <!-- place 51 (224.200 points) -->
   * RuCTFE <span class="discreet">(place 20 of 131)</span>
   <!-- place 51 (209.993 points) -->
