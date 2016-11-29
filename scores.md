@@ -12,6 +12,9 @@ Check out [our (almost complete) CTF history on CTFtime](https://ctftime.org/tea
 <!-- generated using scripts/getPastCTFs.py  -->
 
 * 2016
+  <!-- place 47 (246.418 points) -->
+  * Juniors CTF <span class="discreet">(place 1 of 310)</span>
+  * RC3 CTF <span class="discreet">(place 20 of 663)</span>
   <!-- place 49 (233.160 points) -->
   * Qiwi-Infosec CTF <span class="discreet">(place 15 of 234)</span>
   <!-- place 51 (224.200 points) -->
