@@ -45,7 +45,7 @@ a ciphertext. For this the executable needs to know the private parameters, and 
 to reverse the binary and get them, but since the binary was protected with vmprotect, it would have been
 quite annoying to do so.
 
-The goal was to decrypt the ciphertext given in the `desciption.py` file. With a LSB oracle, like we are given,
+The goal was to decrypt the ciphertext given in the `description.py` file. With a LSB oracle, like we are given,
 we can fully recover the plaintext. We can multiply the ciphertext by `2**e`, essentially doubling the plaintext.
 With the bit from the LSB oracle, we can now decide if the plaintext would have been reduced modulo `N`, when multiplied
 with 2. If it was not reduced, the LSB is 0, since it is an even number. If it is 1, then the even number got reduced 
