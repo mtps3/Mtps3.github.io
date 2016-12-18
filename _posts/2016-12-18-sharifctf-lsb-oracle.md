@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SharifCTF 7: lsb_oracle (crypto 150)"
+title: "SharifCTF 7: LSB oracle (crypto 150)"
 author: creed
 categories: writeup
 tags: [cat/crypto]
