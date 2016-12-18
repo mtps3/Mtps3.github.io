@@ -16,8 +16,9 @@ tags: [cat/crypto]
 
 ## Write-up
 
-This is the second version of the lsb_oracle challenge.
-We were again given a python file detailing the encrpytion process, which was again standard RSA with PKCS1 v1.5 padding. 
+This is the second version of the lsb_oracle challenge. (Find the first version at:
+https://losfuzzys.github.io/writeup/2016/12/18/sharifctf-lsb-oracle/)
+We were again given a python file detailing the encryption process, which was again standard RSA with PKCS1 v1.5 padding. 
 
 ```python
 #! /usr/bin/env python3
@@ -42,10 +43,10 @@ print(b)
 However, when trying the solution script for the first lsb_oracle, we notice that we get a part of the flag, but the
 LSB oracle now gives random output for the 200 least siginificant bits, rendering a huge part of the flag unreadable.
 
-Upon further inspection, I found out that other (non-flag) ciphertext work just fine for the LSB, again only having a few corrupt bytes at the end.
+Upon further inspection, I found out that other (non-flag) ciphertext work just fine for the LSB oracle, again only having a few corrupt bytes at the end.
 Knowing this, we can use the property of RSA that it is homomorphic with respect to multiplication. This means that `ENC(P1*P2) == C1*C2`.
 
-We generate another known plaintext-ciphertext pair, and multiply the two ciphertext together. We can now decode this new ciphertext with the LSB oracle,
+We generate another known plaintext-ciphertext pair, and multiply the two ciphertexts together. We can now decode this new ciphertext with the LSB oracle,
 and bruteforce the last 3 bytes (which takes a few minutes) to get the correct plaintext. We then can multiply this plaintext with the inverse of our second
 plaintext and get the flag plaintext. This process can be seen in the below script.
 
