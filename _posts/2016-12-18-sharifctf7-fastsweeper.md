@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SharifCTF 7: Fastsweeper (pwn 400)"
+title: "SharifCTF 7: Fastsweeper (pwn 300)"
 author: f0rki
 categories: writeup
 tags: [cat/pwn, tool/radare, tool/pwntools]
