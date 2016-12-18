@@ -16,8 +16,7 @@ tags: [cat/crypto]
 
 ## Write-up
 
-This is the second version of the lsb_oracle challenge. (Find the first version at:
-https://losfuzzys.github.io/writeup/2016/12/18/sharifctf-lsb-oracle/)
+This is the second version of the lsb_oracle challenge. (You can find the first version [here](https://losfuzzys.github.io/writeup/2016/12/18/sharifctf-lsb-oracle/))
 We were again given a python file detailing the encryption process, which was again standard RSA with PKCS1 v1.5 padding. 
 
 ```python
