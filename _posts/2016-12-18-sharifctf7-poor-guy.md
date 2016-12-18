@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SharifCTF 7: Tehran (pwn 400)"
+title: "SharifCTF 7: Poor Guy (Web 150)"
 author: f0rki
 categories: writeup
 tags: [cat/web, tool/sqlmap]
@@ -11,9 +11,13 @@ tags: [cat/web, tool/sqlmap]
 * **Description:**
 
 >I'm a poor guy.  Please buy me the secret flag.
+>
 >  * username: poorguy
+>
 >  * password: withnomoney
+>
 >  Hint: SQL Injection
+>
 >  Hint 2: `$input_escaped = str_replace("'","\'",$user_input);`
 
 ## Write-up
