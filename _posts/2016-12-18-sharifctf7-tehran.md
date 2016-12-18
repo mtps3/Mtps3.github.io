@@ -137,9 +137,9 @@ vaddr=0x0804bc31 paddr=0x00003c31 ordinal=047 sz=22 len=21 section=.rodata type=
 ```
 
 The one string looks like a list of keywords and the other one is printed in
-the main function, right before the call to opcode interpreter. So I tried to
-input that look like scripting languages, and after some time I managed to get
-some valid inputs.
+the main function, right before the call to opcode interpreter. So I tried
+several inputs that kind of look like scripting languages, and after some time
+I managed to get some valid inputs.
 
 ```
 begin(){
