@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SharifCTF 7: lsb_oracle_lobotomized (crypto 400)"
+title: "SharifCTF 7: Lobotomized LSB oracle (crypto 400)"
 author: creed
 categories: writeup
 tags: [cat/crypto]
