@@ -16,7 +16,7 @@ Please notice:
 
 * This week, we will [meet in realraum](https://grical.realraum.at/e/show/880/), Graz' Hackspace.
 * Also, we will meet a bit earlier, but feel free to show up later if
-you want. [3]
+you want.
 
 
 ### Roadmap:
