@@ -187,7 +187,7 @@ I played around a little more with the syntax and tried to produce valid program
   - Apparently calling undefined functions triggers this error
 - `compare` is mapped to `memcmp`
 - Apparently if we omit args to function calls, they are still fetched from 
-  wherever they are ususally passed, resulting in use of 
+  wherever they are ususally passed, resulting in use of uninitialized memory.
 - `heap_create` is mapped to malloc
   - We can calculate with the return address of `heap_create`
   - We can use this to leak pointers to the heap (with `exit` or `puts`)
@@ -201,16 +201,16 @@ parameters we specify.
 $ ltrace -i -C ./tehran
 [...]
 begin() {
-    fillout(0x1337, 0x42, 10);
+    fillout(1337, 42, 10);
 }
 [..]
 
-[0x804b658] mprotect(4919, 66, 10, 0x804afd0)         = 0xffffffff
+[0x804b658] mprotect(1337, 42, 10, 0x804afd0)         = 0xffffffff
 [0x804b530] printf("exit(%d)", -1exit(-1))            = 8
 ```
 
 I confirmed in the debugger that we can change the memory protections of any segment this way.
-With the follwing snippet, we can make the text and heap sections `RWX`
+With the follwing snippet, we can make the code and heap sections `RWX`
 
 ```
 begin(){
