@@ -12,6 +12,10 @@ Check out [our (almost complete) CTF history on CTFtime](https://ctftime.org/tea
 <!-- generated using scripts/getPastCTFs.py  -->
 
 * 2016
+  * 33C3 CTF <span class="discreet">(TODO)</span>
+  <!-- place 38 (293.092 points) -->
+  * SharifCTF 7 <span class="discreet">(place 2 of 700)</span>
+  * SECCON Online CTF <span class="discreet">(place 31 of 930)</span>
   <!-- place 47 (246.418 points) -->
   * Juniors CTF <span class="discreet">(place 1 of 310)</span>
   * RC3 CTF <span class="discreet">(place 20 of 663)</span>
