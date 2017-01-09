@@ -18,15 +18,18 @@ TEAMURL = '/team/8323'
 
 re_overall = '<p align=\"left\">Overall rating place: <b>\s*(\d+)\s*</b> with <b>(\d*\.\d*)</b> pts in (\d+)</p>'
 
+
 def getNumberOfParticipatingTeams(ctf_url):
     team_html = requests.get(BASEURL + ctf_url).text
     soup = BeautifulSoup(team_html, 'html.parser')
 
     return soup.find_all('td', {'class': 'place'})[-1].string
 
+
 def logScore(year, place, points):
-	with open(year + '.log', "a") as logfile:
-		logfile.write('%d;%s;%s\n' % (int(time.time()), place, points))
+    with open(year + '.log', "a") as logfile:
+        logfile.write('%d;%s;%s\n' % (int(time.time()), place, points))
+
 
 def getPastCTFs():
     team_html = requests.get(BASEURL + TEAMURL).text
@@ -42,8 +45,8 @@ def getPastCTFs():
         logScore(year, place, points)
         for ctf in year_data.find_all('tr'):
             cols = ctf.find_all('td')
-            if len(cols) <= 0: # if idx == 0
-            	print '  %s' % scorestring
+            if len(cols) <= 0:  # if idx == 0
+                print '  %s' % scorestring
                 continue
             ctf_place = cols[1].string
             ctf_name = cols[2].string.replace(year, '').strip()
