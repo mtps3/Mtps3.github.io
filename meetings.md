@@ -4,6 +4,8 @@ title: Meetings
 permalink: /meetings/
 ---
 
+(see also [our calendar below](#calendar).)
+
 <ul>
 {% for post in site.categories.meeting %}
 <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> @ {{ post.when }} </li>
