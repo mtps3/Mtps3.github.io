@@ -11,8 +11,9 @@ Check out [our (almost complete) CTF history on CTFtime](https://ctftime.org/tea
 
 <!-- generated using scripts/getPastCTFs.py  -->
 
-* 2016
-  * 33C3 CTF <span class="discreet">(TODO)</span>
+* 2016 (Overall rating place: 36)
+  <!-- place 36 (333.244 points) -->
+  * 33C3 CTF <span class="discreet">(place 48 of 277)</span>
   <!-- place 38 (293.092 points) -->
   * SharifCTF 7 <span class="discreet">(place 2 of 700)</span>
   * SECCON Online CTF <span class="discreet">(place 31 of 930)</span>
@@ -48,7 +49,7 @@ Check out [our (almost complete) CTF history on CTFtime](https://ctftime.org/tea
   * HackIM  <span class="discreet">(place 61 of 535)</span>
   * EFF CTF
   * Insomni'hack teaser <span class="discreet">(place 44 of 245)</span>
-* 2015
+* 2015 (Overall rating place: 152)
   <!-- place 152 (73.994 points) -->
   * 32C3 CTF <span class="discreet">(place 58 of 389)</span>
   * FAUST CTF <span class="discreet">(place 6 of 62)</span>
@@ -60,7 +61,7 @@ Check out [our (almost complete) CTF history on CTFtime](https://ctftime.org/tea
   * DEF CON CTF Qualifier <span class="discreet">(place 145 of 284)</span>
   * Boston Key Party CTF <span class="discreet">(place 90 of 822)</span>
   * Ghost in the Shellcode <span class="discreet">(place 283 of 321)</span>
-* 2014
+* 2014 (Overall rating place: 424)
   <!-- place 424 (22.027 points) -->
   * RuCTFE <span class="discreet">(place 62 of 133)</span>
   * Hack.lu CTF <span class="discreet">(place 85 of 395)</span>
