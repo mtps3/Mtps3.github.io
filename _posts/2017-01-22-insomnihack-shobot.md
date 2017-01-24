@@ -95,7 +95,7 @@ again at the page's source:
 We got another object in our list. This type our *"trust"* has been decreased,
 with the info *ctype_digit*, which indicates that the web shop is written in PHP
 and probably a check for the article id failed
-(http://php.net/manual/en/function.ctype-digit.php). Then we tried an SQL
+(<http://php.net/manual/en/function.ctype-digit.php>). Then we tried an SQL
 injection (SQLi):
 
 ```
@@ -162,7 +162,7 @@ used, for convenience, *ORDER BY rand()* in our injections. Luckily we
 did not need many tries ;)
 
 Now, we just navigated to the admin's login page
-(http://shobot.teaser.insomnihack.ch/?page=admin), which was also stated in the
+(<http://shobot.teaser.insomnihack.ch/?page=admin>), which was also stated in the
 page's source and read the flag on the web page :)
 
 ```
