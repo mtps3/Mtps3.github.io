@@ -8,19 +8,21 @@ permalink: /writeups/
 
 {% for post in site.categories.writeup %}
    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-   {% capture prev_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+   {% capture next_year %}{{ post.next.date | date: "%Y" }}{% endcapture %}
 
    {% if forloop.first %}
 <h3>{{this_year}}</h3>
 <ul>
-    {% else %}
-        {% if this_year != prev_year %}
+   {% endif %}
+
+<li><!--{{ post.date | date: "%b %-d, %Y" }} --> <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+    # {% else %}
+   {% if this_year != next_year %}
 </ul>
-<h3>{{this_year}}</h3>
+<h3>{{next_year}}</h3>
 <ul>
-        {% endif %}
-    {% endif %}
-   <li><!--{{ post.date | date: "%b %-d, %Y" }} --> <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+        #{% endif %}
+   {% endif %}
 
    {% if forloop.last %}
 </ul>
