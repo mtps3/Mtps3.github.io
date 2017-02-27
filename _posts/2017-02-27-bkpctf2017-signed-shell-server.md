@@ -92,14 +92,15 @@ promising as it triggers a jump into the `exec_command` function. But then crap
 is loaded into the registers and it fails.
 
 To use one of these commands we need to still send an overlong line, with
-contents are not hashed. The HMAC covers only up to the first NULL byte, so we
-can send for example:
+contents that are not hashed. The HMAC covers only the data up to the first
+NULL byte, so we can send for example:
 
 ```python
 "ls\n" + "\x00" * 253
 ```
 
-This allows us to trigger the overflow, with a known HMAC.
+This allows us to trigger the buffer overflow into the function pointer, with
+one of the known HMACs.
 
 ## exploit recap
 
