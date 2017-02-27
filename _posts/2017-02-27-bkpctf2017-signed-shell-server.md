@@ -36,7 +36,7 @@ argc). We call this `use_md5`. This is a byte sized varialbe that is placed
 right behind the `global` buffer, which has size `0x100`. We can overwrite the
 `use_md5` flag with a zero byte with the calls:
 
-```
+```c
 i = read(global, 0x100, 0); // send exactly 255 bytes
 global[i] = 0;              // out of bounds write to the use_md5 flag
 ```
@@ -49,7 +49,7 @@ functions.
 There is a off-by-one error, which allows us to overwrite the last byte of the
 first function pointer. We are targeting the `deny_ptr` in this struct:
 
-```
+```c
 struct exec_guy {
     char hash[20];
     void (*deny_ptr)(char*);
@@ -118,7 +118,7 @@ This allows us to trigger the overflow, with a known HMAC.
 In the end we just opted to bruteforce, until we hit a byte that worked. We
 tried with a bunch of commands:
 
-```
+```sh
 cat flag; echo <random stuff>
 ```
 
