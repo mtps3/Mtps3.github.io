@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Boston Key Party CTf 2017: Solitary Confinement (pwn 99)"
+title: "Boston Key Party 2017: Solitary Confinement (pwn 99)"
 author: f0rki
 categories: writeup
 tags: [cat/pwn, tool/rbash]

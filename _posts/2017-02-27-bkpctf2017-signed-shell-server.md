@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Boston Key Party CTf 2017: Signed Shell Server (pwn 200)"
+title: "Boston Key Party 2017: Signed Shell Server (pwn 200)"
 author: f0rki, creed
 categories: writeup
 tags: [cat/pwn]
