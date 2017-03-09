@@ -11,6 +11,16 @@ Check out [our (almost complete) CTF history on CTFtime](https://ctftime.org/tea
 
 <!-- generated using scripts/getPastCTFs.py  -->
 
+* 2017
+  * UCSB iCTF <span class="discreet">(place 10)</span>
+  <!-- place 17 (78.738 points) -->
+  * Boston Key Party CTF <span class="discreet">(place 20 of 948)</span>
+  * BSides San Francisco CTF <span class="discreet">(place 28 of 531)</span>
+  * nullcon HackIM <span class="discreet">(place 120 of 363)</span>
+  * BITSCTF <span class="discreet">(place 7 of 275)</span>
+  * AlexCTF <span class="discreet">(place 19 of 1029)</span>
+  * Insomni'hack teaser <span class="discreet">(place 36 of 339)</span>
+
 * 2016 (Overall rating place: 36)
   <!-- place 36 (333.244 points) -->
   * 33C3 CTF <span class="discreet">(place 48 of 277)</span>
@@ -49,6 +59,7 @@ Check out [our (almost complete) CTF history on CTFtime](https://ctftime.org/tea
   * HackIM  <span class="discreet">(place 61 of 535)</span>
   * EFF CTF
   * Insomni'hack teaser <span class="discreet">(place 44 of 245)</span>
+
 * 2015 (Overall rating place: 152)
   <!-- place 152 (73.994 points) -->
   * 32C3 CTF <span class="discreet">(place 58 of 389)</span>
@@ -61,6 +72,7 @@ Check out [our (almost complete) CTF history on CTFtime](https://ctftime.org/tea
   * DEF CON CTF Qualifier <span class="discreet">(place 145 of 284)</span>
   * Boston Key Party CTF <span class="discreet">(place 90 of 822)</span>
   * Ghost in the Shellcode <span class="discreet">(place 283 of 321)</span>
+
 * 2014 (Overall rating place: 424)
   <!-- place 424 (22.027 points) -->
   * RuCTFE <span class="discreet">(place 62 of 133)</span>
