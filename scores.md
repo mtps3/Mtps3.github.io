@@ -12,6 +12,7 @@ Check out [our (almost complete) CTF history on CTFtime](https://ctftime.org/tea
 <!-- generated using scripts/getPastCTFs.py  -->
 
 * 2017
+  * BSides Ljubljana CTF <span class="discreet">(place 1 of 13)</span>
   * UCSB iCTF <span class="discreet">(place 10)</span>
   <!-- place 17 (78.738 points) -->
   * Boston Key Party CTF <span class="discreet">(place 20 of 948)</span>
