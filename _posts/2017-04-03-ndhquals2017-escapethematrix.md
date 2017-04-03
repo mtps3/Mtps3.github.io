@@ -192,7 +192,7 @@ def i2d(i):
 So our first try was a simple infoleak ROP chain
 
 ```c
-puts(puts@GOT);
+puts(GOT.puts);
 ```
 
 We tried to use the pwntools `ROP` builder, but it often inserted a padding
