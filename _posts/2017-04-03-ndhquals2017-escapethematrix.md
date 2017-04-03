@@ -301,7 +301,7 @@ chain0.raw(velf.symbols['exit'])
 ```
 
 Turns out this ROP chain was too big, we got a lot of `NaN`s from the inverted
-matrix. damn. OK. New constraint shorter ROP chains. We modified the infoleak
+matrix. damn. New constraint: shorter ROP chains. We modified the infoleak
 ROP chain to to jump back to main:
 
 ```python
@@ -316,7 +316,7 @@ chain0.raw(main_addr)
 
 This way we can repeat the whole process and overwrite the return address
 again.
-So with the leaked libc address we constructed another small ROP payload:
+With the leaked libc address we constructed another small ROP payload:
 
 ```python
 libc.address = puts_leaked - libc.symbols['puts']
@@ -336,11 +336,11 @@ binary worked pretty reliably so we are restricted to use those. Short recap:
 2. The ROP chain must be `<= 9` slots for the matrix invert to work out
 
 Now it's gonna get intereseting. We probably could've found a way to work
-around 2. by continuing the ROP chain in the last row of the matrix and
-adjusting the stack a little. But we didn't bother as using repeated corrupting
+around 2 by continuing the ROP chain in the last row of the matrix and
+adjusting the stack a little. But we didn't bother as using repeated corruption
 by returning to main again worked pretty well.
 
-So in the second ROP chain we will now use a function from the binary to
+In the second ROP chain we will now use a function from the binary to
 overwrite the address of `exit` in the `GOT`. We used the 
 `read_data(char*buffer, uint32_t size)` function at `0x400d75`. 
 We couldn't find a gadget to set `rdx`, so we can't use `read` directly. How 
@@ -377,8 +377,8 @@ chain1.raw(velf.symbols['exit'])
 And we got a shell :) Remember we had problems with the infoleak on the remote
 server. We just swapped libcs and tried it on the remote server and suddenly
 our infoleak worked. Apparently it was a buffering issue and jumping back to
-main made the infoleak work. We had to adapt the exploit a little but it worked
-pretty much the same way.
+main made the infoleak work. We had to adapt the exploit a little and 2 minutes 
+later we had a shell :).
 
 ```
 # cat ~/flag
