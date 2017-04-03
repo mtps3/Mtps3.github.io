@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Nuit du Hack CTF Quals 2017: EscapeTheMatrix (Exploit 400)"
-author: f0rki, qqq
+author: f0rki, roman
 categories: writeup
 tags: [cat/pwn, tool/pwntools, tool/ida]
 ---
