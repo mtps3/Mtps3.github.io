@@ -67,10 +67,10 @@ $ checksec escapeTheMatrix
 
 The only functionality of the program is:
 
-1. Reads matrix (`0x400ef7`) with a maximum size of 16 × 16
-2. Prints matrix (`0x401200` called from `0x401018`)
+1. Reads matrix from stdin (`0x400ef7`) with a maximum size of 16 × 16
+2. Prints input matrix (`0x401200` called from `0x401018`)
 3. Inverts matrix (`0x401326`)
-4. Prints matrix (`0x401200` called from `0x4010a2`)
+4. Prints inverted matrix (`0x401200` called from `0x4010a2`)
 5. Frees the matrix (`0x4012fc`) and exits
 
 We figured that the operation is matrix inverse, because
