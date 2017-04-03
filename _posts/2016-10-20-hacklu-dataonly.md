@@ -20,6 +20,8 @@ tags: [cat/pwn, tool/pwntools, vuln/heap, vuln/bufferoverflow, vuln/customa-lloc
 
 [binaries](https://cthulhu.fluxfingers.net/static/chals/dataonly_24001a4e2a4cfb06392de6c887e8101b.tar)
 
+[binaries-mirror](https://github.com/ctfs/write-ups-2016/blob/master/hack.lu-ctf-2016/exploiting/dataonly-200/dataonly.tar)
+
 ## Write-up
 
 ```
