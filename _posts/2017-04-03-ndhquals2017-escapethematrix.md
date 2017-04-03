@@ -18,7 +18,9 @@ tags: [cat/pwn, tool/pwntools, tool/ida]
 > Url tcp://escapethematrix.quals.nuitduhack.com:50505/
 >
 > Filename 	Size 	Hash (SHA-256)
+>
 > libc.so.6 	2.02 MB 	c01efbc3fd683182d2fe5ccecbc13e9d0ce2d2d26ed0063240d050952e3c09e7
+>
 > escapeTheMatrix 	14.34 kB 	c96e4875c0a90224a3cf6dca575022d28d8505712027755f585b3e38ecfe450a
 
 ## Write-up
