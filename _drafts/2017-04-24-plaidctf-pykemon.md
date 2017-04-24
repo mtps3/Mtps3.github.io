@@ -241,7 +241,8 @@ Using that we built the following format string: `{0.__class__.pykemon[10][4]}`,
 
 Decoding the session was actually not needed to solve this challenge because the Pykemon ids are also in the HTML.
 
-I also just found out that if we already go to the trouble of decoding the session, the session would contain the flag anyway if a FLAG Pykemon was in the room.
+I also just found out that if we already go to the trouble of decoding the session, we could read through it properly as well.
+It turns out the session would contain the flag anyway if a FLAG Pykemon was in the room.
 
 ## Scripts
 
