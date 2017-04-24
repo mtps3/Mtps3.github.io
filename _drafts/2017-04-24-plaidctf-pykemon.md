@@ -278,9 +278,6 @@ def catch(name):
         'name': name
     }).text
 
-def clear_session():
-    d.s = requests.session()
-
 def get_room():
     global d
     return d.s.get(d.url)
@@ -353,7 +350,6 @@ import requests
 import base64
 import zlib
 import json
-import re
 
 class D:
     pass
@@ -367,20 +363,6 @@ def get_cookie_object():
     for c in d.s.cookies:
         if c.name == "session":
             return c
-
-def rename(name, new_name):
-    return d.s.post(d.url + "rename/", data={
-        'name': name,
-        'new_name': new_name
-    }).text
-
-def catch(name):
-    return d.s.post(d.url + "catch/", data={
-        'name': name
-    }).text
-
-def clear_session():
-    d.s = requests.session()
 
 def get_room():
     global d
