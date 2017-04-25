@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "PlaidCTF 2017: Pykemon (web 151)"
-author: yrlf
+author: yrlf, skogler
 categories: writeup
 tags: [cat/web, tool/python-requests, tool/ipython]
 ---
@@ -16,16 +16,14 @@ tags: [cat/web, tool/python-requests, tool/ipython]
 
 ## Write-up
 
-As a first note, I solved this challenge together with **skogler**. We explored the challenge together, and corrected each other's mistakes.
-
-tl;dr; python2 .format() exploit
-
 This was a really fun challenge to solve. It's a small "game" where a few small images of pokemon show up on the screen and teleport around and if you click on one you can catch it ... sometimes.
 The twist? All pokemons have their names changed to start with "Py", so "Psyduck" changes to "Pyduck".
 
 The service is a python2 Flask webserver, and runs almost exactly the source attached in the challenge description. You can even run the server locally and debug your exploits.
 
-Then we read through the source:
+tl;dr; python2 .format() exploit
+
+Firs, we read through the source:
 
 ```
 .
@@ -114,7 +112,7 @@ Out[4]: b'x\x9c\xd5\x97[o\xe28\x14\x80\xff\xca(\xcf<\xe4\x82g&H}\xd8t\x1b\'\xa8 
 
 Huh. That doesn't look right, does it?
 
-I was just about to give up on decoding the session when **skogler** had an idea: "maybe it's compressed?"
+We were just about to give up on decoding the session when **skogler** had an idea: "maybe it's compressed?"
 
 ```
 In [5]: with open("data", "wb") as f:
@@ -241,8 +239,8 @@ Using that we built the following format string: `{0.__class__.pykemon[10][4]}`,
 
 Decoding the session was actually not needed to solve this challenge because the Pykemon ids are also in the HTML.
 
-I also just found out that if we already go to the trouble of decoding the session, we could read through it properly as well.
-It turns out the session would contain the flag anyway if a FLAG Pykemon was in the room.
+We also just found out that if we already go to the trouble of decoding the session, we could read through it properly as well.
+It turns out the decoded session already contains the flag if a FLAG Pykemon is in the room, but because all useful strings in the JSON are base64-encoded _AGAIN_, we didn't see it at first.
 
 ## Scripts
 
