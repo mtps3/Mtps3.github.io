@@ -1,9 +1,13 @@
 ---
+title: 'hackim 2016: smasththestate (web 400)'
+date: 2016-02-02 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/web
+- lang/php
 layout: post
-title:  "hackim 2016: smasththestate (web 400)"
 author: f0rki
-categories: writeup
-tags: [cat/web, lang/php]
 ---
 
 * **Category:** web

@@ -1,9 +1,13 @@
 ---
+title: 'TUCTF 2016: Especially Good Jumps (pwn 75)'
+date: 2016-05-16 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/pwn
+- tool/binjitsu
 layout: post
-title: "TUCTF 2016: Especially Good Jumps (pwn 75)"
 author: f0rki
-categories: writeup
-tags: [cat/pwn, tool/binjitsu]
 ---
 
 * **Category:** pwn

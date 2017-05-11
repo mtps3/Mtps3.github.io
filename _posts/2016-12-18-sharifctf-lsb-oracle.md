@@ -1,9 +1,12 @@
 ---
+title: 'SharifCTF 7: LSB oracle (crypto 150)'
+date: 2016-12-18 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/crypto
 layout: post
-title: "SharifCTF 7: LSB oracle (crypto 150)"
 author: creed
-categories: writeup
-tags: [cat/crypto]
 ---
 
 * **Category:** crypto

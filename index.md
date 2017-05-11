@@ -1,7 +1,7 @@
 ---
-layout: mainpage
 title: Home
-permalink: /
+permalink: "/"
+layout: mainpage
 ---
 
 ## Pwn0bot1@Root:~$cat flag{Pwn0bot1}.txt'

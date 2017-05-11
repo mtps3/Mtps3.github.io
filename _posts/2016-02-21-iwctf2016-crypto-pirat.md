@@ -1,9 +1,13 @@
 ---
+title: 'Internetwache CTF 2016: Crypto-Pirat (crypto 50)'
+date: 2016-02-21 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/crypto
+- tool/pwntools
 layout: post
-title:  "Internetwache CTF 2016: Crypto-Pirat (crypto 50)"
 author: verr
-categories: writeup
-tags: [cat/crypto, tool/pwntools]
 ---
 
 * **Category:** Crypto

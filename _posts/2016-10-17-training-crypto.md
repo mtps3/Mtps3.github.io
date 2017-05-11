@@ -1,9 +1,11 @@
 ---
+title: 'Training: crypto'
+date: 2016-10-17 00:00:00 Z
+categories:
+- meeting
 layout: post
-title:  "Training: crypto"
-when: "Oct 20, 2016"
+when: Oct 20, 2016
 author: verr & kw
-categories: meeting
 ---
 
 Because  *Hack.lu CTF* is happening on Wednesday, we moved this week's training to Thursday!

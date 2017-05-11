@@ -1,9 +1,12 @@
 ---
+title: 'Boston Key Party 2017: Signed Shell Server (pwn 200)'
+date: 2017-02-27 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/pwn
 layout: post
-title: "Boston Key Party 2017: Signed Shell Server (pwn 200)"
 author: f0rki, creed
-categories: writeup
-tags: [cat/pwn]
 ---
 
 * **Category:** pwn

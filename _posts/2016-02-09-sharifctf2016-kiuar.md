@@ -1,9 +1,12 @@
 ---
+title: 'Sharif University CTF 2016: kiuar (pwn 200)'
+date: 2016-02-09 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/pwn
 layout: post
-title:  "Sharif University CTF 2016: kiuar (pwn 200)"
 author: skogler
-categories: writeup
-tags: [cat/pwn]
 ---
 
 * **Category:** pwn

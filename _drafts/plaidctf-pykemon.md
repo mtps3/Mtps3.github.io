@@ -1,9 +1,14 @@
 ---
+title: 'PlaidCTF 2017: Pykemon (web 151)'
+date: 2017-04-24 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/web
+- tool/python-requests
+- tool/ipython
 layout: post
-title: "PlaidCTF 2017: Pykemon (web 151)"
 author: yrlf, skogler
-categories: writeup
-tags: [cat/web, tool/python-requests, tool/ipython]
 ---
 
 * **Category:** web

@@ -1,9 +1,11 @@
 ---
+title: 'Training: heap pwning'
+date: 2017-01-11 00:00:00 Z
+categories:
+- meeting
 layout: post
-title:  "Training: heap pwning"
-when: "Jan 11, 2017"
+when: Jan 11, 2017
 author: verr & kw
-categories: meeting
 ---
 
 This Wednesday we're gonna take a look at a couple of challenges regarding heap exploitation. So *git pull* your *radare2*. ;)

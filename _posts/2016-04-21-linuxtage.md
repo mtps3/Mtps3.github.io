@@ -1,9 +1,11 @@
 ---
+title: LosFuzzys @ Grazer Linuxtage
+date: 2016-04-21 00:00:00 Z
+categories:
+- meeting
 layout: post
-title:  "LosFuzzys @ Grazer Linuxtage"
-when: "Apr 30, 2016"
+when: Apr 30, 2016
 author: verr
-categories: meeting
 ---
 
 This year's [Grazer Linuxtage](https://linuxtage.at/) are going to happen April 29th to 30th. A lot of interesting talks, workshops and people ahead!

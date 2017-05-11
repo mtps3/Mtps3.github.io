@@ -1,9 +1,13 @@
 ---
+title: 'TUM CTF Teaser 2015: pudel (crypto)'
+date: 2015-10-06 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/crypto
+- attack/paddingoracle
 layout: post
-title:  "TUM CTF Teaser 2015: pudel (crypto)"
 author: f0rki
-categories: writeup
-tags: [cat/crypto, attack/paddingoracle]
 ---
 
 * **Category:** Crypto

@@ -1,9 +1,11 @@
 ---
+title: 'Training: Webcrypto'
+date: 2016-12-14 00:00:00 Z
+categories:
+- meeting
 layout: post
-title:  "Training: Webcrypto"
-when: "Dec 14, 2016"
+when: Dec 14, 2016
 author: verr & kw
-categories: meeting
 ---
 
 Another training in between our exploitation and reversing series.

@@ -1,9 +1,13 @@
 ---
+title: 'hack.lu CTF 2014: Killy The Bit'
+date: 2014-10-26 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/web
+- lang/php
 layout: post
-title:  "hack.lu CTF 2014: Killy The Bit"
 author: f0rki
-categories: writeup
-tags: [cat/web, lang/php]
 ---
 
 ## Write-up

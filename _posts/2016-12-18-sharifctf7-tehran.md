@@ -1,9 +1,13 @@
 ---
+title: 'SharifCTF 7: Tehran (pwn 400)'
+date: 2016-12-18 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/pwn
+- tool/radare
 layout: post
-title: "SharifCTF 7: Tehran (pwn 400)"
 author: f0rki
-categories: writeup
-tags: [cat/pwn, tool/radare]
 ---
 
 * **Category:** pwn

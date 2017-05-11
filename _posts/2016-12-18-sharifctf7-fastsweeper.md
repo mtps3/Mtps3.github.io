@@ -1,9 +1,14 @@
 ---
+title: 'SharifCTF 7: Fastsweeper (pwn 300)'
+date: 2016-12-18 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/pwn
+- tool/radare
+- tool/pwntools
 layout: post
-title: "SharifCTF 7: Fastsweeper (pwn 300)"
 author: f0rki
-categories: writeup
-tags: [cat/pwn, tool/radare, tool/pwntools]
 ---
 
 * **Category:** pwn

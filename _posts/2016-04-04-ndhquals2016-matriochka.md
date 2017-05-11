@@ -1,9 +1,14 @@
 ---
+title: 'Nuit du Hack Quals 2016: Matriochka'
+date: 2016-04-04 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/reversing
+- tool/radare
+- tool/angr
 layout: post
-title:  "Nuit du Hack Quals 2016: Matriochka"
 author: f0rki
-categories: writeup
-tags: [cat/reversing, tool/radare, tool/angr]
 ---
 
 * **Category:** Crack Me

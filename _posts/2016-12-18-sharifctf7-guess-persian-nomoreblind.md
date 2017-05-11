@@ -1,9 +1,14 @@
 ---
+title: 'SharifCTF 7: Guess (pwn 50), Persian (pwn 150), NoMoreBlind (pwn 200)'
+date: 2016-12-18 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/pwn
+- tool/pwntools
+- vuln/fmtstr
 layout: post
-title: "SharifCTF 7: Guess (pwn 50), Persian (pwn 150), NoMoreBlind (pwn 200)"
 author: f0rki
-categories: writeup
-tags: [cat/pwn, tool/pwntools, vuln/fmtstr]
 ---
 
 ## Format Strings Everywhere

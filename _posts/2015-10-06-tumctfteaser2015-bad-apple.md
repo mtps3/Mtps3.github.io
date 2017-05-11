@@ -1,9 +1,14 @@
 ---
+title: 'TUM CTF Teaser 2015: bad_apple (crypto)'
+date: 2015-10-06 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/crypto
+- tool/hashpump
+- attack/hashlengthextension
 layout: post
-title:  "TUM CTF Teaser 2015: bad_apple (crypto)"
 author: f0rki
-categories: writeup
-tags: [cat/crypto, tool/hashpump, attack/hashlengthextension]
 ---
 
 * **Category:** Crypto

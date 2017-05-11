@@ -1,9 +1,14 @@
 ---
+title: 'D-CTF Qualifiers 2016: Super Secure Company LLC (Web 300)'
+date: 2016-09-25 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/web
+- vuln/xss
+- lang/php
 layout: post
-title: "D-CTF Qualifiers 2016: Super Secure Company LLC (Web 300)"
 author: f0rki, verr
-categories: writeup
-tags: [cat/web, vuln/xss, lang/php]
 ---
 
 * **Category:** Web

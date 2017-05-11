@@ -1,9 +1,14 @@
 ---
+title: 'D-CTF Qualifiers 2016: Warm Heap (Exploit 100)'
+date: 2016-09-25 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/pwn
+- tool/pwntools
+- tool/ltrace
 layout: post
-title: "D-CTF Qualifiers 2016: Warm Heap (Exploit 100)"
 author: f0rki
-categories: writeup
-tags: [cat/pwn, tool/pwntools, tool/ltrace]
 ---
 
 * **Category:** Exploit

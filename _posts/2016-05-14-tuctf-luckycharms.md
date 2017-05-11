@@ -1,9 +1,13 @@
 ---
+title: 'TUCTF 2016: Lucky Charms (web 150)'
+date: 2016-05-14 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/web
+- lang/java
 layout: post
-title:  "TUCTF 2016: Lucky Charms (web 150)"
 author: kree
-categories: writeup
-tags: [cat/web, lang/java]
 ---
 
 * **Category:** web

@@ -1,9 +1,11 @@
 ---
+title: 'Training: forensic'
+date: 2016-09-26 00:00:00 Z
+categories:
+- meeting
 layout: post
-title:  "Training: forensic"
-when: "Sep 29, 2016"
+when: Sep 29, 2016
 author: verr & kw
-categories: meeting
 ---
 
 Another week, another training session!

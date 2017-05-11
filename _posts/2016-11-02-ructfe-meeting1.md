@@ -1,9 +1,11 @@
 ---
+title: 'Training: RuCTFe #1'
+date: 2016-11-02 00:00:00 Z
+categories:
+- meeting
 layout: post
-title:  "Training: RuCTFe #1"
-when: "Nov 02, 2016"
+when: Nov 02, 2016
 author: verr & kw
-categories: meeting
 ---
 
 Since [RuCTFe 2016](https://ructfe.org/index) is around the corner, we focus this weeks training on Attack & Defense CTFs.

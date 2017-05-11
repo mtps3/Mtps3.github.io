@@ -1,9 +1,11 @@
 ---
+title: ruCTFE15 & 9447ctf recap
+date: 2015-12-01 00:00:00 Z
+categories:
+- meeting
 layout: post
-title:  "ruCTFE15 & 9447ctf recap"
-when: "Dec 08, 2015"
+when: Dec 08, 2015
 author: verr
-categories: meeting
 ---
 
 November was a rather awesome & successful month for LosFuzzys, our CTF team. We participated in two CTFs and we did well:

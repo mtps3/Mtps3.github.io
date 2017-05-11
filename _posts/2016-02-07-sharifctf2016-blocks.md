@@ -1,9 +1,14 @@
 ---
+title: 'Sharif University CTF 2016: Blocks (forensics 400)'
+date: 2016-02-07 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/forensics
+- lang/sql
+- tech/png
 layout: post
-title:  "Sharif University CTF 2016: Blocks (forensics 400)"
 author: f0rki
-categories: writeup
-tags: [cat/forensics, lang/sql, tech/png]
 ---
 
 * **Category:** forensics

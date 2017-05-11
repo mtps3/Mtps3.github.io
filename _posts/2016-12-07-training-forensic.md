@@ -1,9 +1,11 @@
 ---
+title: 'Training: Forensics'
+date: 2016-12-07 00:00:00 Z
+categories:
+- meeting
 layout: post
-title:  "Training: Forensics"
-when: "Dec 07, 2016"
+when: Dec 07, 2016
 author: verr & kw
-categories: meeting
 ---
 
 Now for something (not so completely) different ...

@@ -1,9 +1,15 @@
 ---
+title: 'Nuit du Hack Quals 2016: Secure File Reader'
+date: 2016-04-04 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/pwn
+- tool/radare
+- tool/binjitsu
+- vuln/bufferoverflow
 layout: post
-title:  "Nuit du Hack Quals 2016: Secure File Reader"
 author: f0rki
-categories: writeup
-tags: [cat/pwn, tool/radare, tool/binjitsu, vuln/bufferoverflow]
 ---
 
 * **Category:** Exploit Me

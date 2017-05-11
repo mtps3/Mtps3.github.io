@@ -1,9 +1,13 @@
 ---
+title: 'Boston Key Party 2017: Solitary Confinement (pwn 99)'
+date: 2017-02-27 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/pwn
+- tool/rbash
 layout: post
-title: "Boston Key Party 2017: Solitary Confinement (pwn 99)"
 author: f0rki
-categories: writeup
-tags: [cat/pwn, tool/rbash]
 ---
 
 * **Category:** pwn

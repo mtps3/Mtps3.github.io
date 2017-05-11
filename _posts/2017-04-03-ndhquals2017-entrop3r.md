@@ -1,9 +1,13 @@
 ---
+title: 'Nuit du Hack CTF Quals 2017: Entrop3r (Exploit 350)'
+date: 2017-04-03 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/pwn
+- vuln/injection
 layout: post
-title: "Nuit du Hack CTF Quals 2017: Entrop3r (Exploit 350)"
 author: f0rki, roman
-categories: writeup
-tags: [cat/pwn, vuln/injection]
 ---
 
 * **Category:** Exploit

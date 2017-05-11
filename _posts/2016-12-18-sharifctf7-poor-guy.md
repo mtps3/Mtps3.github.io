@@ -1,9 +1,13 @@
 ---
+title: 'SharifCTF 7: Poor Guy (Web 150)'
+date: 2016-12-18 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/web
+- tool/sqlmap
 layout: post
-title: "SharifCTF 7: Poor Guy (Web 150)"
 author: f0rki
-categories: writeup
-tags: [cat/web, tool/sqlmap]
 ---
 
 * **Category:** Web

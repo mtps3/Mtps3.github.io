@@ -1,9 +1,14 @@
 ---
+title: 'TUM CTF 2016: zwiebel (rev 50)'
+date: 2016-10-03 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/reversing
+- tool/radare
+- tool/angr
 layout: post
-title: "TUM CTF 2016: zwiebel (rev 50)"
 author: f0rki
-categories: writeup
-tags: [cat/reversing, tool/radare, tool/angr]
 ---
 
 * **Category:** rev

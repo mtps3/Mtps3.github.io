@@ -1,9 +1,11 @@
 ---
+title: 'Training: RuCTFe recap + Pwning'
+date: 2016-11-14 00:00:00 Z
+categories:
+- meeting
 layout: post
-title:  "Training: RuCTFe recap + Pwning"
-when: "Nov 16, 2016"
+when: Nov 16, 2016
 author: verr & kw
-categories: meeting
 ---
 
 RuCTFe Lessons Learned + Pwning Training

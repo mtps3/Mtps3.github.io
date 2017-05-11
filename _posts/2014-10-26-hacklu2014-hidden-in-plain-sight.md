@@ -1,9 +1,13 @@
 ---
+title: 'hack.lu CTF 2014: Hidden In Plain Sight'
+date: 2014-10-26 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/crypto
+- lang/javascript
 layout: post
-title:  "hack.lu CTF 2014: Hidden In Plain Sight"
 author: f0rki
-categories: writeup
-tags: [cat/crypto, lang/javascript]
 ---
 
 ## Write-up

@@ -1,9 +1,13 @@
 ---
+title: 'hack.lu CTF 2014: Objection'
+date: 2014-10-26 00:00:00 Z
+categories:
+- writeup
+tags:
+- tech/nodejs
+- lang/javascript
 layout: post
-title:  "hack.lu CTF 2014: Objection"
 author: f0rki
-categories: writeup
-tags: [tech/nodejs, lang/javascript]
 ---
 
 ## Write-up

@@ -1,9 +1,11 @@
 ---
+title: 'Training: Reversing'
+date: 2016-11-23 00:00:00 Z
+categories:
+- meeting
 layout: post
-title:  "Training: Reversing"
-when: "Nov 23, 2016"
+when: Nov 23, 2016
 author: verr & kw
-categories: meeting
 ---
 
 A Reversing Training!

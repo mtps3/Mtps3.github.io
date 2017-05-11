@@ -1,9 +1,14 @@
 ---
+title: 'Boston Key Party CTF 2016: More Like ZKP (crypto 4)'
+date: 2016-03-30 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/crypto
+- lang/go
+- lang/python
 layout: post
-title:  "Boston Key Party CTF 2016: More Like ZKP (crypto 4)"
 author: roman
-categories: writeup
-tags: [cat/crypto, lang/go, lang/python]
 ---
 
 * **Category:** crypto

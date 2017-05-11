@@ -1,8 +1,10 @@
 ---
+title: BSides Ljubljana CTF 2016
+date: 2016-03-17 00:00:00 Z
+categories:
+- writeup
 layout: post
-title:  "BSides Ljubljana CTF 2016"
 author: f0rki, verr
-categories: writeup
 ---
 
 This year we attended [BSides Ljubljana](https://bsidesljubljana.si/) for the first time. We attended, because security conferences in our area are rare, and because it sounded interesting. Besides an awesome atmosphere there was also [a nice CTF](https://bsidesljubljana.si/ctf/). So we more or less spontaneously sat down on a cozy sofa, grabbed our computers, and played our first on-site CTF ever. And [we won](https://ctf.viris.si/BSidesLjubljana0x7E0CTF/rezultati/)! \o/

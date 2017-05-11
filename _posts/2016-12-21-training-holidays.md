@@ -1,9 +1,11 @@
 ---
+title: 'Training: Beer & Bytes'
+date: 2016-12-21 00:00:00 Z
+categories:
+- meeting
 layout: post
-title:  "Training: Beer & Bytes"
-when: "Dec 21, 2016"
+when: Dec 21, 2016
 author: verr & kw
-categories: meeting
 ---
 
 Holiday time ... ?

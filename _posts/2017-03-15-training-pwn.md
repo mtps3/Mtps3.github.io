@@ -1,9 +1,11 @@
 ---
+title: 'Training: pwn/reverse'
+date: 2017-03-15 00:00:00 Z
+categories:
+- meeting
 layout: post
-title:  "Training: pwn/reverse"
-when: "Mar 15, 2017"
+when: Mar 15, 2017
 author: verr & f0rki
-categories: meeting
 ---
 
 As usual we're meeting this Wednesday.

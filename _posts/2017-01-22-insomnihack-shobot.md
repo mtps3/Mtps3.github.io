@@ -1,9 +1,13 @@
 ---
+title: 'Insomni''hack Teaser 2017: shobot (web 200)'
+date: 2017-01-22 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/web
+- tool/python-requests
 layout: post
-title: "Insomni'hack Teaser 2017: shobot (web 200)"
 author: kw
-categories: writeup
-tags: [cat/web, tool/python-requests]
 ---
 
 * **Category:** web 

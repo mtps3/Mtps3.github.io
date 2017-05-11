@@ -1,9 +1,13 @@
 ---
+title: 'Internetwache CTF 2016: Mess Of Hash (web 50)'
+date: 2016-02-22 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/web
+- lang/php
 layout: post
-title:  "Internetwache CTF 2016: Mess Of Hash (web 50)"
 author: kree
-categories: writeup
-tags: [cat/web, lang/php]
 ---
 
 * **Category:** web

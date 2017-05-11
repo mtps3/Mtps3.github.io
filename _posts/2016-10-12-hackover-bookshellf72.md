@@ -1,9 +1,13 @@
 ---
+title: 'hackover 2016: bookshellf (pwn 72)'
+date: 2016-10-12 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/pwn
+- tool/pwntools
 layout: post
-title: "hackover 2016: bookshellf (pwn 72)"
 author: wolvg, creed
-categories: writeup
-tags: [cat/pwn, tool/pwntools]
 ---
 
 * **Category:** pwn

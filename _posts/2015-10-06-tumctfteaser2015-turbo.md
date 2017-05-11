@@ -1,9 +1,13 @@
 ---
+title: 'TUM CTF Teaser 2015: turbo (crypto)'
+date: 2015-10-06 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/crypto
+- attack/compressionoracle
 layout: post
-title:  "TUM CTF Teaser 2015: turbo (crypto)"
 author: f0rki
-categories: writeup
-tags: [cat/crypto, attack/compressionoracle]
 ---
 
 * **Category:** Crypto

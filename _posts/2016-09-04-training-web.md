@@ -1,9 +1,11 @@
 ---
+title: 'Training: web'
+date: 2016-09-04 00:00:00 Z
+categories:
+- meeting
 layout: post
-title:  "Training: web"
-when: "Sep 08, 2016"
+when: Sep 08, 2016
 author: verr & kw
-categories: meeting
 ---
 
 2nd edition in our new series of regular trainings!

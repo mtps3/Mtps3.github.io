@@ -1,6 +1,6 @@
 ---
-layout: page
 title: Authors
+layout: page
 hidden: true
 ---
 

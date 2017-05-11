@@ -1,9 +1,11 @@
 ---
+title: 'Training: crypto'
+date: 2017-02-01 00:00:00 Z
+categories:
+- meeting
 layout: post
-title:  "Training: crypto"
-when: "Feb 01, 2017"
+when: Feb 01, 2017
 author: verr & kw
-categories: meeting
 ---
 
 Another week, another training, another opportunity to dig deep.

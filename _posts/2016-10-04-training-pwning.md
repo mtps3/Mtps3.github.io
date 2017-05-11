@@ -1,9 +1,11 @@
 ---
+title: 'Training: pwning'
+date: 2016-10-04 00:00:00 Z
+categories:
+- meeting
 layout: post
-title:  "Training: pwning"
-when: "Oct 04, 2016"
+when: Oct 04, 2016
 author: verr & kw
-categories: meeting
 ---
 
 As already announced in the last training session, our new training date during the winter semester is Wednesday from 18:15 c.t. to 20:30.

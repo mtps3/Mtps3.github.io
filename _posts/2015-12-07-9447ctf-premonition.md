@@ -1,9 +1,14 @@
 ---
+title: '9447ctf: premonition'
+date: 2015-12-07 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/web
+- lang/sql
+- tool/python-requests
 layout: post
-title: "9447ctf: premonition"
 author: f0rki
-categories: writeup
-tags: [cat/web, lang/sql, tool/python-requests]
 ---
 
 * **Category:** Web

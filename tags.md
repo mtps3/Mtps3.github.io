@@ -1,6 +1,6 @@
 ---
-layout: page
 title: Tags
+layout: page
 hidden: true
 ---
 

@@ -1,9 +1,13 @@
 ---
+title: 'Internetwache CTF 2016: Replace with Grace (web 60)'
+date: 2016-02-22 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/web
+- lang/php
 layout: post
-title:  "Internetwache CTF 2016: Replace with Grace (web 60)"
 author: sigttou
-categories: writeup
-tags: [cat/web, lang/php]
 ---
 
 * **Category:** web

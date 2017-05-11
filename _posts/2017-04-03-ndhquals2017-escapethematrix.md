@@ -1,9 +1,14 @@
 ---
+title: 'Nuit du Hack CTF Quals 2017: EscapeTheMatrix (Exploit 400)'
+date: 2017-04-03 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/pwn
+- tool/pwntools
+- tool/ida
 layout: post
-title: "Nuit du Hack CTF Quals 2017: EscapeTheMatrix (Exploit 400)"
 author: f0rki, roman
-categories: writeup
-tags: [cat/pwn, tool/pwntools, tool/ida]
 ---
 
 * **Category:** Exploit

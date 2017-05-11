@@ -1,9 +1,14 @@
 ---
+title: 'Internetwache CTF 2016: Remote Printer (exp 80)'
+date: 2016-02-21 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/pwn
+- tool/pwntools
+- vuln/fmtstr
 layout: post
-title:  "Internetwache CTF 2016: Remote Printer (exp 80)"
 author: f0rki
-categories: writeup
-tags: [cat/pwn, tool/pwntools, vuln/fmtstr]
 ---
 
 * **Category:** Exploit

@@ -1,9 +1,16 @@
 ---
+title: 'hack.lu CTF 2016: dataonly'
+date: 2016-10-20 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/pwn
+- tool/pwntools
+- vuln/heap
+- vuln/bufferoverflow
+- vuln/customa-lloctor
 layout: post
-title: "hack.lu CTF 2016: dataonly"
 author: f0rki
-categories: writeup
-tags: [cat/pwn, tool/pwntools, vuln/heap, vuln/bufferoverflow, vuln/customa-lloctor]
 ---
 
 * **Category:** Exploiting

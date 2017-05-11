@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Writeups
-permalink: /writeups/
+permalink: "/writeups/"
+layout: page
 ---
 
 <span class="discreet">Sort by <a href="/tags">tag</a>, <a href="/authors">author</a></span>

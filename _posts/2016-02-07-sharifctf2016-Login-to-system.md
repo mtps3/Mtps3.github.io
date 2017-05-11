@@ -1,9 +1,13 @@
 ---
+title: 'Sharif University CTF 2016: Login to system (pwn 100)'
+date: 2016-02-07 00:00:00 Z
+categories:
+- writeup
+tags:
+- cat/pwn
+- tool/pwntools
 layout: post
-title:  "Sharif University CTF 2016: Login to system (pwn 100)"
 author: f0rki
-categories: writeup
-tags: [cat/pwn, tool/pwntools]
 ---
 
 * **Category:** pwn

@@ -1,9 +1,11 @@
 ---
+title: FaustCTF15 preparation meeting
+date: 2015-12-01 00:00:00 Z
+categories:
+- meeting
 layout: post
-title:  "FaustCTF15 preparation meeting"
-when: "Dec 17, 2015"
+when: Dec 17, 2015
 author: verr
-categories: meeting
 ---
 
 FaustCTF, another offence&defence CTF, is happening on the 18th of December (Friday before the Christmas break) and we are going to participate!

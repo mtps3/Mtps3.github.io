@@ -1,9 +1,11 @@
 ---
+title: Insomni'hack teaser
+date: 2016-01-16 00:00:00 Z
+categories:
+- meeting
 layout: post
-title:  "Insomni'hack teaser"
-when: "Jan 16-17, 2016"
+when: Jan 16-17, 2016
 author: verr
-categories: meeting
 ---
 
 [*Insomni'hack teaser 2016*](https://teaser.insomnihack.ch/) is going to be our first CTF this year.
