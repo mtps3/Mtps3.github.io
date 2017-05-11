@@ -12,6 +12,13 @@ Check out [our (almost complete) CTF history on CTFtime](https://ctftime.org/tea
 <!-- generated using scripts/getPastCTFs.py  -->
 
 * 2017
+  * SUTD Security Showdown Quals <span class="discreet">(place 1)</span>
+  <!-- place 37 (135.219 points) -->
+  * DEF CON CTF Qualifier <span class="discreet">(place 230 of 368)</span>
+  * PlaidCTF <span class="discreet">(place 108 of 555)</span>
+  * ASIS CTF Quals <span class="discreet">(place 87 of 451)</span>
+  * Nuit du Hack CTF Quals <span class="discreet">(place 9 of 378)</span>
+  * 0CTF  Quals <span class="discreet">(place 197 of 908)</span>
   * BSides Ljubljana CTF <span class="discreet">(place 1 of 13)</span>
   * UCSB iCTF <span class="discreet">(place 10)</span>
   <!-- place 17 (78.738 points) -->
