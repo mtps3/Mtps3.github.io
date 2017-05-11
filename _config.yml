@@ -4,8 +4,8 @@ email: ""
 description: "ctfs, write-ups."
 baseurl: ""
 url: "https://mtps3.github.io"
-twitter_username: @pwn0bot1
-github_username:  @mtps3
+twitter_username: pwn0bot1
+github_username:  mtps3
 # Build settings
 markdown: kramdown
 permalink: pretty
