@@ -4,24 +4,17 @@ title: Home
 permalink: /
 ---
 
-## Welcome to LosFuzzys' webpage
-
-<img src="/images/fuzzy.jpg" style="width:7em; height:7em; float:right;" />
-
-*LosFuzzys* is a CTF¹ team located in Graz, Europe.
-
-We are a group of people interested in information security, which [participates](https://ctftime.org/team/8323) in [CTFs](https://ctftime.org/ctf-wtf/).
-
-<p class="small dark">You are located in Graz? You are interested in competitive information security competitions? You want to participate? Feel free to reach out to us!</p>
+## Pwn0bot1@Root:~$cat flag{Pwn0bot1}.txt'
 
 
-* Mail: we -at- hack.more.systems
-* Twitter: [@LosFuzzys](https://twitter.com/LosFuzzys)
-* Mailinglist: [losfuzzys@htu.tugraz.at](mailto:losfuzzys@htu.tugraz.at) ([subscribe](https://mail.htu.tugraz.at/cgi-bin/mailman/listinfo/losfuzzys))
-
-<p class="small dark">LosFuzzys is currently coordinated by <a href="https://twitter.com/f0rki">f0rki</a>, <a href="https://twitter.com/stefan2904">stefan</a>, and <a href="https://twitter.com/__kaydoubleu__">kw</a>.</p>
+Hi, my name is Matheus
+18 Years,information security Enthusiast who live in São Paulo/BRZ,Player Capture The Flag Challenges of team Pw4food.
 
 
-<p class="small dark">
-¹ - <strike>Cyber Task Force</strike> Capture The Flag
-</p>
+<img src="/images/p4f.png" style="width:7em; height:7em; float:right;" />
+
+
+
+
+* Twitter: [@pwn0bot1](https://twitter.com/pwn0bot1)
+* Github: [@mtps3](https://github.com/mtps3)
