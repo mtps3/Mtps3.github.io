@@ -1,11 +1,12 @@
 # Site settings
 title: CTF
-email: ""
+email: 
 description: "ctfs, write-ups."
 baseurl: ""
-url: "https://mtps3.github.io"
+url: "https://losfuzzys.github.io"
 twitter_username: pwn0bot1
 github_username:  mtps3
+
 # Build settings
 markdown: kramdown
 permalink: pretty
@@ -20,4 +21,31 @@ gems:
   - jekyll-redirect-from
 #  - jekyll-mentions
 
-
+authors:
+  fuzzy:
+    display_name: Fuzzy The Bug
+    twitter: LosFuzzys
+    web: https://hack.more.systems
+  verr:
+    display_name: verr
+    twitter: stefan2904
+    github: stefan2904
+  f0rki:
+    display_name: f0rki
+    twitter: f0rki
+    web: https://f0rki.at
+    github: f0rki
+  kw:
+    twitter: __kaydoubleu__
+  skogler:
+    display_name: skogler
+  creed:
+  kree:
+  sigttou:
+    twitter: sigttou
+  roman:
+  wolvg:
+  jrandom:
+  yrlf:
+    twitter: theFerdi265
+    github: Ferdi265
