@@ -408,3 +408,25 @@ a:visited { color: #205caa; }
     margin: 0 0 15px; }
 
 }
+.progress-container {
+    width:100%;
+    height:1em;
+    position:relative;
+    background-color:#f1f1f1;
+    margin 0px 10px;
+}
+
+.progressbar {
+    background-color:#757575;
+    height:100%;
+    position:absolute;
+    line-height:inherit;
+}
+
+.progress-status {
+    padding:0;
+    margin:0;
+    font-size:9pt;
+    display:inline;
+}
+
