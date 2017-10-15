@@ -1,4 +1,5 @@
 ---
+titel: Home
 permalink: "/"
 layout: mainpage
 ---
