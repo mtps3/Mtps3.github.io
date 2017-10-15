@@ -23,30 +23,30 @@ gems:
 - jekyll-redirect-from
 authors:
   fuzzy:
-    display_name:
-    twitter:
-    web:
-  verr:
-    display_name:
-    twitter:
-    github:
-  f0rki:
-    display_name:
-    twitter:
+    display_name: 
+    twitter: 
     web: 
-    github:
+  verr:
+    display_name: 
+    twitter: 
+    github: 
+  f0rki:
+    display_name: 
+    twitter: 
+    web: 
+    github: 
   kw:
-    twitter:
+    twitter: 
   skogler:
     display_name: skogler
   creed: 
   kree: 
   sigttou:
-    twitter:
+    twitter: 
   roman: 
   wolvg: 
   jrandom: 
   yrlf:
-    twitter:
+    twitter: 
     github: 
 theme: jekyll-theme-hacker
