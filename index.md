@@ -1,6 +1,7 @@
 ---
 title: Home
 permalink: "/"
+position: 0
 layout: mainpage
 ---
 
