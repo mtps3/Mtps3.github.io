@@ -1,6 +1,6 @@
 ---
-titel: Home
 permalink: "/"
+titel: Home
 layout: mainpage
 ---
 
