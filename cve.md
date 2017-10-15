@@ -1,7 +1,7 @@
 ---
-layout: post
 title: CVE
-permalink: /cve/
+permalink: "/cve/"
+layout: post
 ---
 
 <h1>CVE</h1>
