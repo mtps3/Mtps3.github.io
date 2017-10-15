@@ -4,10 +4,7 @@ permalink: "/cve/"
 layout: page
 ---
 
-
-    <div class="container">
-      <section id="main_content">
-        <h2>[CVE-2017-15287] Vulnerability XSS - Dreambox</h2>
+<h2>[CVE-2017-15287] Vulnerability XSS - Dreambox</h2>
 
 <p>Prova de Conceito (Proof of Concept - PoC), que virou o <a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15287" target="_blank" rel="noopenner noreferrer">CVE-2017-15287</a> por Thiago “THX”.</p>
 
@@ -84,13 +81,4 @@ layout: page
 
 <p><a href="https://vuldb.com/fr/?id.107825" target="_blank" rel="noopenner noreferrer">VulDB</a></p>
 
-
-      </section>
-    </div>
-
-<div class="foot">
-&copy; 2017 - 2017 FireShell Security Team. All rights reserved.
-</div>
-  </body>
-</html>
 
