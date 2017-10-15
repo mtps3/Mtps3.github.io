@@ -4,8 +4,6 @@ permalink: "/cve/"
 layout: post
 ---
 
-<h1>CVE</h1>
-
 <ul>
   {% for post in site.posts %}
     <li>
