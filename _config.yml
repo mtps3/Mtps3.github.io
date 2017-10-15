@@ -15,7 +15,7 @@ url: https://thxsena.github.io
 twitter_username: 
 github_username: thxsena
 markdown: kramdown
-permalink: /:categories/:title/
+permalink: "/:categories/:title/"
 kramdown:
   input: GFM
 gems:
