@@ -9,13 +9,13 @@ collections:
     title: Uploads
     output: true
 email: 
-description: ctfs, write-ups.
+description: CVE, Home.
 baseurl: ''
-url: https://losfuzzys.github.io
-twitter_username: pwn0bot1
-github_username: mtps3
+url: https://thxsena.github.io
+twitter_username: 
+github_username: thxsena
 markdown: kramdown
-permalink: pretty
+permalink: /:categories/:title/
 kramdown:
   input: GFM
 gems:
