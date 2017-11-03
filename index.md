@@ -10,8 +10,6 @@ layout: mainpage
 Hi, my name is Matheus
 18 Years,information security Enthusiast who live in São Paulo/BRZ,Player Capture The Flag Challenges of team Pw4food.
 
-<p><a href="/_layouts/barra-de-porcentagem.html">
-
 <img src="/images/p4f.png" style="width:7em; height:7em; float:right;" />
 
 
