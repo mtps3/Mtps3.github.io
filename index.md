@@ -25,10 +25,7 @@ Hi, my name is Matheus
                             </div>
                             <p class="progress-status">2016-08-01</p>
                             <p class="progress-status right">2018-12-10</p>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+                    
 <script>
         var init_date = new Date(2016, 08, 01); 
         var exit_date = new Date(2018, 12, 10);
