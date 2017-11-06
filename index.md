@@ -12,7 +12,7 @@ Hi, my name is Matheus
 
 
 
-<!DOCTYPE html>
+
 <html>
 <head>
     <title></title>
@@ -44,9 +44,6 @@ Hi, my name is Matheus
 </html>
 
 <img src="/images/p4f.png" style="width:7em; height:7em; float:right;" />
-
-
-
 
 * Twitter: [@pwn0bot1](https://twitter.com/pwn0bot1)
 * Github: [@mtps3](https://github.com/mtps3)
