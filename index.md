@@ -10,13 +10,7 @@ layout: mainpage
 Hi, my name is Matheus
 18 Years,information security Enthusiast who live in São Paulo/BRZ,Player Capture The Flag Challenges of team Pw4food.
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-    <link href="/css/mtps3.css" rel="stylesheet" type="text/css">
-</head>
-<body>
+
 
                             <div class="progress-container">
                                 <div class="progressbar" id="progress-conscription" style="width:100.94710659352%; font-size:8pt; font-family:Consolas; color:white; line-height:15px;">&nbsp;100.94710659%</div>
