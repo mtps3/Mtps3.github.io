@@ -21,7 +21,7 @@ Hi, my name is Matheus
                                 <div class="progressbar" id="progress-conscription" style="width:100.94710659352%; font-size:8pt; font-family:Consolas; color:white; line-height:15px;">&nbsp;100.94710659%</div>
                             </div>
                             <p class="progress-status">2016-08-01</p>
-                            <p class="progress-status style="float:right">2018-12-10</p>
+                            <p class="progress-status right">2018-12-10</p>
                     
 <script>
         var init_date = new Date(2016, 08, 01); 
